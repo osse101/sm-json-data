@@ -1187,12 +1187,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": ["Gravity"]
-                },
-                {
-                  "name": "Suitless",
-                  "notable": false,
-                  "requires": ["canSuitlessMaridia"]
+                  "requires": ["h_canNavigateUnderwater"]
                 }
               ]
             }
@@ -1232,12 +1227,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": ["Gravity"]
-                },
-                {
-                  "name": "Suitless",
-                  "notable": false,
-                  "requires": ["canSuitlessMaridia"]
+                  "requires": [ "h_canNavigateUnderwater" ]
                 }
               ]
             }
@@ -1252,12 +1242,8 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": ["Gravity"]
-                },
-                {
-                  "name": "Suitless",
-                  "notable": false,
-                  "requires": ["canSuitlessMaridia"]
+                  "requires": [ "h_canNavigateUnderwater" ],
+                  "devNote": "Jump from door platform to door platform."
                 }
               ]
             },
@@ -1271,6 +1257,7 @@
                     "h_canNavigateUnderwater",
                     "canShinechargeMovement",
                     "Grapple",
+                    "canPlayInSand",
                     {"or": [
                       {"canComeInCharged": {
                         "fromNode": 1,
@@ -1305,12 +1292,8 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": ["Gravity"]
-                },
-                {
-                  "name": "Suitless",
-                  "notable": false,
-                  "requires": ["canSuitlessMaridia"]
+                  "requires": [ "h_canNavigateUnderwater" ],
+                  "devNote": "Jump from door platform to door platform."
                 }
               ]
             },
@@ -1328,12 +1311,13 @@
                 },
                 {
                   "name": "Pants Room Sand HiJump with Gravity",
-                  "notable": true,
+                  "notable": false,
                   "requires": [
                     "Gravity",
                     "Grapple",
                     "HiJump",
-                    "canTrickyJump"
+                    "canCarefulJump",
+                    "canPlayInSand"
                   ],
                   "note": [
                     "Break the grapple block, then jump on the sand to get through the hole.",
@@ -1342,12 +1326,13 @@
                 },
                 {
                   "name": "Pants Room Sand MidAir SpringBall with Gravity",
-                  "notable": true,
+                  "notable": false,
                   "requires": [
                     "Gravity",
                     "Grapple",
                     "canSpringBallJumpMidAir",
-                    "canTrickyJump"
+                    "canCarefulJump",
+                    "canPlayInSand"
                   ],
                   "note": "It's pretty annoying with the sand, but it's doable."
                 },
@@ -1357,9 +1342,10 @@
                   "requires": [
                     "Gravity",
                     "Grapple",
-                    "canBombJumpOnSand",
-                    "canIBJ"
-                  ]
+                    "canPlayInSand",
+                    "canJumpIntoIBJ"
+                  ],
+                  "note": "Wait for a good jump out of the sand to being the IBJ with."
                 },
                 {
                   "name": "SpringBall IBJ",
@@ -1368,7 +1354,8 @@
                     "Gravity",
                     "Grapple",
                     "SpringBall",
-                    "canIBJ"
+                    "canIBJ",
+                    "canPlayInSand"
                   ],
                   "note": "Starting the IBJ with SpringBall is a lot less obnoxious."
                 },
@@ -1377,10 +1364,11 @@
                   "notable": true,
                   "requires": [
                     "Grapple",
-                    "canGravityJump"
+                    "canGravityJump",
+                    "canPlayInSand"
                   ],
                   "note": [
-                    "Gets above the grapple block by doing a well-positioned and well-timed Gravity jump off the sand.",
+                    "Gets above the grapple block by doing a well-positioned and well-timed Gravity jump following a good jump off the sand.",
                     "It is also possible to do this off of a wall jump on the side immediately followed by a gravity jump."
                   ]
                 },
@@ -1391,7 +1379,8 @@
                     "Grapple",
                     "canSuitlessMaridia",
                     "HiJump",
-                    "canSpringBallJumpMidAir"
+                    "canSpringBallJumpMidAir",
+                    "canPlayInSand"
                   ],
                   "note": "Requires a mid-air SpringBall jump off the sand."
                 },
@@ -1422,8 +1411,23 @@
                   "notable": false,
                   "requires": [
                     "Gravity",
-                    "canConsecutiveWalljump"
-                  ]
+                    {"or": [
+                      "canConsecutiveWalljump",
+                      "SpaceJump"
+                    ]},
+                    {"or": [
+                      {"enemyDamage": {
+                        "enemy": "Menu",
+                        "type": "contact",
+                        "hits": 1
+                      }},
+                      "ScrewAttack",
+                      "canStaggeredWalljump",
+                      "Charge"
+                    ]}
+                  ],
+                  "note": "The swarm of Menus will attack Samus at the top of the room.",
+                  "devNote": "The Menus prevent a reliable IBJ."
                 },
                 {
                   "name": "Suitless",
@@ -1432,9 +1436,22 @@
                     "canSuitlessMaridia",
                     "SpaceJump",
                     "HiJump",
-                    "canConsecutiveWalljump"
+                    {"or": [
+                      {"enemyDamage": {
+                        "enemy": "Menu",
+                        "type": "contact",
+                        "hits": 1
+                      }},
+                      "ScrewAttack",
+                      "canStaggeredWalljump",
+                      "Charge"
+                     ]}
                   ],
-                  "note": "SpaceJump is needed to break free of the water."
+                  "note": [
+                    "Watch for the water level to start falling to time the jump to escape at its lowest point.",
+                    "Then use SpaceJump to splash on top of the water.",
+                    "Time another jump with the water level or walljump to fully escape the water."
+                  ]
                 }
               ]
             },
@@ -1442,18 +1459,34 @@
               "id": 4,
               "strats": [
                 {
-                  "name": "Base",
+                  "name": "Gravity",
                   "notable": false,
-                  "requires": ["Gravity"]
+                  "requires": [
+                    "Gravity",
+                    {"or": [
+                      "canPlayInSand",
+                      "SpaceJump"
+                    ]}
+                  ]
                 },
                 {
                   "name": "Suitless",
                   "notable": false,
-                  "requires": ["canSuitlessMaridia"],
-                  "note": "Doable without hjb, but there is a softlock risk."
+                  "requires": [
+                    "canSuitlessMaridia",
+                    {"or": [
+                      "canPlayInSand",
+                      {"and": [
+                        "canFlatleyJump",
+                        "canDownBack"
+                      ]},
+                      "canResetFallSpeed"
+                    ]}
+                  ],
+                  "note": "Jumping from the sand without HiJump is possible, but there is a softlock risk."
                 }
               ],
-              "note": "This link assumes the grapple block has been broken from below."
+              "devNote": "This link assumes the grapple block has been broken from below."
             }
           ]
         }
