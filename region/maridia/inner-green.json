@@ -1517,7 +1517,18 @@
           "nodeType": "door",
           "nodeSubType": "blue",
           "nodeAddress": "0x001a7bc",
-          "doorEnvironments": [{"physics": "air"}],
+          "doorEnvironments": [
+            {
+              "entranceNodes": [1],
+              "physics": "air",
+              "devNote": "The water level when coming from the larger pants room is below node 2."
+            },
+            {
+              "entranceNodes": [2,3],
+              "physics": "water",
+              "devNote": "The water level when using either door at 2 or 3 goes higher than node 1."
+            }
+          ],
           "runways": [
             {
               "name": "Base Runway - East Pants Room Right Door (to Shaktool)",
@@ -1539,6 +1550,16 @@
                   "name": "Base",
                   "notable": false,
                   "requires": [ "Gravity" ]
+                },
+                {
+                  "name": "Fall Into Right Leg",
+                  "notable": false,
+                  "requires": [
+                    {"resetRoom": {
+                      "nodes": [1],
+                      "nodesToAvoid": [4]
+                    }}
+                  ]
                 }
               ],
               "usableComingIn": false,
@@ -1624,7 +1645,8 @@
                   "notable": false,
                   "requires": []
                 }
-              ]
+              ],
+              "devNote": "It's expected to take this link by coming from Left Pants Room so these nodes would not be submerged."
             }
           ]
         },
@@ -1637,12 +1659,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": ["Gravity"]
-                },
-                {
-                  "name": "Suitless",
-                  "notable": false,
-                  "requires": ["canSuitlessMaridia"]
+                  "requires": ["h_canNavigateUnderwater"]
                 }
               ]
             }
@@ -1664,12 +1681,11 @@
                   "notable": false,
                   "requires": [
                     "canSuitlessMaridia",
+                    "HiJump",
                     {"or": [
                       "canSpringBallJumpMidAir",
-                      {"and": [
-                        "HiJump",
-                        "h_canCrouchJumpDownGrab"
-                      ]}
+                      "h_canCrouchJumpDownGrab",
+                      "canUseFrozenEnemies"
                     ]}
                   ]
                 },
@@ -1680,14 +1696,39 @@
                     "canSuitlessMaridia",
                     "canUseFrozenEnemies",
                     {"or": [
-                      "Wave",
-                      "Spazer",
-                      "Plasma"
+                      "h_canCrouchJumpDownGrab",
+                      "canTwoTileSqueeze",
+                      "Morph"
                     ]}
                   ],
                   "note": [
                     "Involves breaking the top left Puyo free and then freezing it while it falls.",
-                    "It's very very tricky to get 4 shots off in time to freeze it. The beam requirements are to do it in less shots than that."
+                    "Walk to the end of the door platform and wait for the above puyo to land on the shot block.",
+                    "It will float there until its next jump, where it will slowly descend."
+                  ]
+                },
+                {
+                  "name": "Cross Room Gravity Jump",
+                  "notable": false,
+                  "requires": [
+                    "canSuitlessMaridia",
+                    "canTrickyJump",
+                    "canCrossRoomJumpIntoWater",
+                    "canMomentumConservingTurnaround",
+                    {"adjacentRunway": {
+                      "fromNode": 3,
+                      "usedTiles": 1,
+                      "physics": ["air"]
+                    }},
+                    {"or": [
+                      "canUseFrozenEnemies",
+                      "canSpringBallJumpMidAir",
+                      "HiJump"
+                    ]}
+                  ],
+                  "note": [
+                    "Quickly shoot to break the shot block and then do a momentumConservingTurnaround to ascend into the little region.",
+                    "Another movement item will be needed to get closer to the crumble blocks."
                   ]
                 }
               ]
@@ -1704,9 +1745,30 @@
                   "name": "East Pants Room Puyo Clip",
                   "notable": false,
                   "requires": [
-                    "h_canNavigateUnderwater",
+                    "Gravity",
                     "canPuyoIceClip"
-                  ]
+                  ],
+                  "note": "Freeze the puyo at the start of its jump animation, on the right frame."
+                },
+                {
+                  "name": "East Pants Room Suitless Puyo Clip",
+                  "notable": true,
+                  "requires": [
+                    "canSuitlessMaridia",
+                    "canPuyoIceClip",
+                    {"enemyDamage": {
+                      "enemy": "Puyo",
+                      "type": "contact",
+                      "hits": 8
+                    }}
+                  ],
+                  "note": [
+                    "Positioning the Puyo requires it to perform a big jump then start falling with a frame perfect freeze.",
+                    "One possible setup stands on the left tile of the right side and lets the puyo jump up taking a contact hit.",
+                    "Then so long as the puyo isn't on the very edge, it will do a big jump.",
+                    "Clip onto the puyo by doing an aim down jump and switching to a forward diagonal at the right time."
+                  ],
+                  "devNote": "1 hit per attempt, 7 for leniency."
                 },
                 {
                   "name": "East Pants Room CF Clip",
@@ -1714,20 +1776,30 @@
                   "requires": [
                     "canCrystalFlashClip",
                     "Gravity",
-                    "Bombs"
-                  ]
+                    "Bombs",
+                    {"ammo": {
+                      "type": "PowerBomb",
+                      "count": 5
+                    }}
+                  ],
+                  "devNote": "Extra 5 cost is just leniency."
                 },
                 {
                   "name": "East Pants Room Suitless Crystal Flash Clip",
                   "notable": true,
                   "requires": [
                     "canCrystalFlashClip",
-                    "canSuitlessMaridia"
+                    "canSuitlessMaridia",
+                    {"ammo": {
+                      "type": "PowerBomb",
+                      "count": 10
+                    }}
                   ],
                   "note": [
                     "Place a PB up against the crumble blocks, then jump and midair morph into that same position at the end of the explosion while holing CF inputs.",
                     "Immediately after the CF, hold down to break the crumble blocks."
-                  ]
+                  ],
+                  "devNote": "Extra 10 cost is just leniency."
                 }
               ]
             },
@@ -1737,12 +1809,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": ["Gravity"]
-                },
-                {
-                  "name": "Suitless",
-                  "notable": false,
-                  "requires": ["canSuitlessMaridia"]
+                  "requires": ["h_canNavigateUnderwater"]
                 }
               ]
             }
