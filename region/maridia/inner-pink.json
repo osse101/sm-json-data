@@ -5382,7 +5382,7 @@
                   "notable": true,
                   "requires": [
                     "canSuitlessMaridia",
-                    "canAbuseSandfalls",
+                    "canSandfallBounce",
                     "canSpringBallJumpMidAir",
                     "canTrickyJump"
                   ],
