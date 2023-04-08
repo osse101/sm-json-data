@@ -712,6 +712,16 @@
                   ]
                 },
                 {
+                  "name": "Springball",
+                  "notable": false,
+                  "requires": [
+                    "Gravity",
+                    "HiJump",
+                    "h_canUseSpringBall"
+                  ],
+                  "note": "By springballing through the room Samus will not sink into the sand."
+                },
+                {
                   "name": "Lazy Jumps",
                   "notable": false,
                   "requires": [
@@ -745,6 +755,16 @@
                     "Gravity",
                     "SpaceJump"
                   ]
+                },
+                {
+                  "name": "Springball",
+                  "notable": false,
+                  "requires": [
+                    "Gravity",
+                    "HiJump",
+                    "h_canUseSpringBall"
+                  ],
+                  "note": "By springballing through the room Samus will not sink into the sand."
                 },
                 {
                   "name": "Lazy Jumps",
@@ -988,16 +1008,32 @@
               "id": 2,
               "strats": [
                 {
-                  "name": "Shinespark",
+                  "name": "Gravity Shinespark",
                   "notable": false,
                   "requires": [
+                    "canMidairShinespark",
+                    {"canComeInCharged": {
+                      "framesRemaining": 15,
+                      "fromNode": 1,
+                      "shinesparkFrames": 58,
+                      "excessShinesparkFrames": 4
+                    }}
+                  ],
+                  "devNote": "Needs to activate the spark in-room because Samus will bonk if sparking through too low."
+                },
+                {
+                  "name": "Suitless Shinespark",
+                  "notable": false,
+                  "requires": [
+                    "canMidairShinespark",
                     {"canComeInCharged": {
                       "fromNode": 1,
                       "framesRemaining": 60,
-                      "shinesparkFrames": 71
-                    }}
+                      "shinesparkFrames": 71,
+                      "excessShinesparkFrames": 4
+                     }}
                   ],
-                  "devNote": "Needs to activate the spark in-room because Samus will bonk if sparking through too low. Frame cost assumes no Gravity"
+                  "devNote": "Needs to activate the spark in-room because Samus will bonk if sparking through too low."
                 }
               ],
               "devNote": "This link is only for sparking. All other strats should go 1 -> 3 -> 2."
@@ -1041,8 +1077,8 @@
                       "Ice",
                       "ScrewAttack",
                       {"enemyKill": {
-                        "enemies": [["Evir", "Evir"]],
-                        "explicitWeapons": ["Plasma", "Super"]
+                        "enemies": [["Evir"],[ "Evir"]],
+                        "explicitWeapons": [ "Plasma", "Super", "PowerBombPeriphery" ]
                       }}
                     ]}
                   ],
@@ -1069,7 +1105,8 @@
                         "hits": 1
                       }}
                     ]}
-                  ]
+                  ],
+                  "note": "By entering the room with run speed, it is possible to jump over the pair of Evirs."
                 },
                 {
                   "name": "Evir Fight Suitless",
@@ -1081,8 +1118,8 @@
                     {"or": [
                       "Ice",
                       {"enemyKill": {
-                        "enemies": [["Evir", "Evir"]],
-                        "explicitWeapons": ["Plasma", "Super"]
+                        "enemies": [["Evir"],[ "Evir"]],
+                        "explicitWeapons": [ "Plasma", "Super", "PowerBombPeriphery" ]
                       }}
                     ]}
                   ],
@@ -1099,16 +1136,32 @@
               "id": 1,
               "strats": [
                 {
-                  "name": "Shinespark",
+                  "name": "Gravity Shinespark",
                   "notable": false,
                   "requires": [
+                    "canMidairShinespark",
+                    {"canComeInCharged": {
+                      "framesRemaining": 15,
+                      "fromNode": 2,
+                      "shinesparkFrames": 61,
+                      "excessShinesparkFrames": 4
+                    }}
+                  ],
+                  "devNote": "Needs to activate the spark in-room because Samus will bonk if sparking through too low."
+                },
+                {
+                  "name": "Suitless Shinespark",
+                  "notable": false,
+                  "requires": [
+                    "canMidairShinespark",
                     {"canComeInCharged": {
                       "fromNode": 2,
                       "framesRemaining": 60,
-                      "shinesparkFrames": 71
+                      "shinesparkFrames": 71,
+                      "excessShinesparkFrames": 4
                     }}
                   ],
-                  "devNote": "Needs to activate the spark in-room because Samus will bonk if sparking through too low. Frame cost assumes no Gravity"
+                  "devNote": "Needs to activate the spark in-room because Samus will bonk if sparking through too low."
                 }
               ],
               "devNote": "This link is only for sparking. All other strats should go 2 -> 3 -> 1."
@@ -1175,8 +1228,8 @@
                       "Ice",
                       "ScrewAttack",
                       {"enemyKill": {
-                        "enemies": [["Evir", "Evir"]],
-                        "explicitWeapons": ["Super", "Plasma"]
+                        "enemies": [["Evir"],[ "Evir"]],
+                        "explicitWeapons": [ "Super", "Plasma", "PowerBombPeriphery" ]
                       }}
                     ]}
                   ],
@@ -1198,8 +1251,8 @@
                       }},
                       "Ice",
                       {"enemyKill": {
-                        "enemies": [["Evir", "Evir"]],
-                        "explicitWeapons": ["Super", "Plasma"]
+                        "enemies": [["Evir"],[ "Evir"]],
+                        "explicitWeapons": [ "Super", "Plasma", "PowerBombPeriphery" ]
                       }}
                     ]}
                   ],
@@ -1228,8 +1281,8 @@
                       "Ice",
                       "ScrewAttack",
                       {"enemyKill": {
-                        "enemies": [["Evir", "Evir"]],
-                        "explicitWeapons": ["Plasma", "Super"]
+                        "enemies": [["Evir"]],
+                        "explicitWeapons": [ "Plasma", "Super", "PowerBombPeriphery" ]
                       }}
                     ]},
                     {"or": [
@@ -1257,13 +1310,7 @@
                     "HiJump",
                     "canCarefulJump",
                     "canTrickyUseFrozenEnemies",
-                    "canPlayInSand",
-                    {"or": [
-                       {"enemyKill": {
-                        "enemies": [["Evir", "Evir"]],
-                        "explicitWeapons": ["Plasma", "Super", "PowerBomb"]
-                      }}
-                     ]}
+                    "canPlayInSand"
                   ],
                   "note": [
                     "Let the Evir descend slightly from its spawn point to be at the correct height.",
@@ -1278,7 +1325,18 @@
                     "HiJump",
                     "canSpringBallJumpMidAir",
                     "canStationaryLateralMidAirMorph",
-                    "canPlayInSand"
+                    "canPlayInSand",
+                    {"or": [
+                      {"enemyDamage": {
+                        "enemy": "Evir",
+                        "type": "particle",
+                        "hits": 1
+                      }},
+                      {"enemyKill": {
+                        "enemies": [["Evir"]],
+                        "explicitWeapons": ["Plasma", "Super", "PowerBomb"]
+                      }}
+                    ]}
                   ],
                   "note": [
                     "On the left side of the raised platform, jump for max height.",
@@ -1485,7 +1543,7 @@
                   "name": "Base",
                   "notable": false,
                   "requires": [ "h_canNavigateUnderwater" ],
-                  "devNote": "Jump from door platform to door platform."
+                  "devNote": "A 3->4->1 link would simply jump from door platform to door platform."
                 }
               ]
             },
@@ -1499,7 +1557,6 @@
                     "h_canNavigateUnderwater",
                     "canShinechargeMovement",
                     "Grapple",
-                    "canPlayInSand",
                     {"or": [
                       {"canComeInCharged": {
                         "fromNode": 1,
@@ -1535,7 +1592,7 @@
                   "name": "Base",
                   "notable": false,
                   "requires": [ "h_canNavigateUnderwater" ],
-                  "devNote": "Jump from door platform to door platform."
+                  "devNote": "A 1->4->3 link would simply jump from door platform to door platform."
                 }
               ]
             },
@@ -1552,7 +1609,7 @@
                   ]
                 },
                 {
-                  "name": "Pants Room Sand HiJump with Gravity",
+                  "name": "Pants Room Gravity with HiJump",
                   "notable": false,
                   "requires": [
                     "Gravity",
@@ -1563,20 +1620,21 @@
                   ],
                   "note": [
                     "Break the grapple block, then jump on the sand to get through the hole.",
-                    "It can be tricky to get a good jump off of the sand."
+                    "Break spin before touching the sand, and then spinjump to get a good jump off of the sand.",
+                    "A stationary spinjump can help."
                   ]
                 },
                 {
-                  "name": "Pants Room Sand MidAir SpringBall with Gravity",
+                  "name": "Pants Room Gravity MidAir SpringBall Jump",
                   "notable": false,
                   "requires": [
                     "Gravity",
                     "Grapple",
                     "canSpringBallJumpMidAir",
-                    "canCarefulJump",
+                    "canTrickyJump",
                     "canPlayInSand"
                   ],
-                  "note": "It's pretty annoying with the sand, but it's doable."
+                  "note": "Break spin before touching the sand, and then spinjump to get a good jump off of the sand."
                 },
                 {
                   "name": "Pants Room IBJ",
@@ -1585,9 +1643,10 @@
                     "Gravity",
                     "Grapple",
                     "canPlayInSand",
-                    "canJumpIntoIBJ"
+                    "canJumpIntoIBJ",
+                    "canTrickyJump"
                   ],
-                  "note": "Wait for a good jump out of the sand to being the IBJ with."
+                  "note": "Wait for a good jump out of the sand to begin the IBJ with.  A stationary spinjump can help."
                 },
                 {
                   "name": "SpringBall IBJ",
@@ -1596,10 +1655,9 @@
                     "Gravity",
                     "Grapple",
                     "SpringBall",
-                    "canIBJ",
-                    "canPlayInSand"
+                    "canIBJ"
                   ],
-                  "note": "Starting the IBJ with SpringBall is a lot less obnoxious."
+                  "note": "Springball can keep Samus out of the sand.  Place the first bomb right after Samus begins falling back towards the sand."
                 },
                 {
                   "name": "Pants Room Gravity Jump",
@@ -1607,24 +1665,36 @@
                   "requires": [
                     "Grapple",
                     "canGravityJump",
-                    "canPlayInSand"
+                    "canPlayInSand",
+                    "canCarefulJump",
+                    {"or": [
+                      "canStationarySpinJump",
+                      "canTrickyJump"
+                    ]}
                   ],
                   "note": [
                     "Gets above the grapple block by doing a well-positioned and well-timed Gravity jump following a good jump off the sand.",
-                    "It is also possible to do this off of a wall jump on the side immediately followed by a gravity jump."
+                    "It is also possible to do this off of a wall jump on the side immediately followed by a gravity jump.",
+                    "Break spin before touching the sand, and then spinjump to get a good jump off of the sand.",
+                    "A stationary spinjump can help."
                   ]
                 },
                 {
-                  "name": "Pants Room Suitless Sand MidAir SpringBall with HiJump",
+                  "name": "Pants Room Suitless MidAir SpringBall Jump with HiJump",
                   "notable": true,
                   "requires": [
                     "Grapple",
                     "canSuitlessMaridia",
                     "HiJump",
                     "canSpringBallJumpMidAir",
-                    "canPlayInSand"
+                    "canPlayInSand",
+                    "canCarefulJump"
                   ],
-                  "note": "Requires a mid-air SpringBall jump off the sand."
+                  "note": [
+                    "Requires a mid-air SpringBall jump off the sand.",
+                    "Break spin before touching the sand, and then spinjump to get a good jump off of the sand.",
+                    "A stationary spinjump or a turnaround spin jump can help but morphing will remove all horizontal momentum."
+                  ]
                 },
                 {
                   "name": "Pants Room Suitless Flatley Turnaround Climb",
@@ -1634,9 +1704,13 @@
                     "canSuitlessMaridia",
                     "HiJump",
                     "canFlatleyJump",
+                    "canCarefulJump",
                     "canSunkenTileWideWallClimb"
                   ],
-                  "note": "Uses a flatley turnaround jump to get Samus inside the gap during a spinjump."
+                  "note": [
+                    "Use a flatley turnaround jump to get Samus inside the gap during a spinjump.",
+                    "Samus must jump from the left side platform."
+                  ]
                 }
               ]
             }
@@ -1707,7 +1781,8 @@
                     "Gravity",
                     {"or": [
                       "canPlayInSand",
-                      "SpaceJump"
+                      "SpaceJump", 
+                      "h_canUseSpringBall"
                     ]}
                   ]
                 },
@@ -1719,13 +1794,24 @@
                     {"or": [
                       "canPlayInSand",
                       {"and": [
-                        "canFlatleyJump",
-                        "canDownBack"
+                        "HiJump",
+                        "h_canUseSpringBall"
                       ]},
+                      {"and": [
+                        "canFlatleyJump",
+                        {"or": [
+                          "canDownBack",
+                          "canTrickyJump"
+                        ]}
+                      ]},
+                      "canWalljump",
                       "canResetFallSpeed"
                     ]}
                   ],
-                  "note": "Jumping from the sand without HiJump is possible, but there is a softlock risk."
+                  "note": [
+                    "Jumping from the sand without HiJump is possible, but there is a softlock risk.",
+                    "Using movement tricks to reduce fall speed even slightly can avoid touching the sand."
+                  ]
                 }
               ],
               "devNote": "This link assumes the grapple block has been broken from below."
@@ -1936,7 +2022,7 @@
                   "notable": false,
                   "requires": [
                     "canSuitlessMaridia",
-                    "canUseFrozenEnemies",
+                    "canTrickyUseFrozenEnemies",
                     {"or": [
                       "h_canCrouchJumpDownGrab",
                       "canTwoTileSqueeze",
@@ -1953,7 +2039,6 @@
                   "name": "Cross Room Gravity Jump",
                   "notable": false,
                   "requires": [
-                    "canSuitlessMaridia",
                     "canTrickyJump",
                     "canCrossRoomJumpIntoWater",
                     "canMomentumConservingTurnaround",
