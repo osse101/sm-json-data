@@ -630,15 +630,11 @@
                   "notable": false,
                   "requires": [
                     "Gravity",
-                    "SpaceJump"
-                  ]
-                },
-                {
-                  "name": "Lazy Jumps",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand"
+                    {"or": [
+                      "SpaceJump",
+                      "canConsecutiveWalljump",
+                      "canPlayInSand"
+                    ]}
                   ]
                 },
                 {
@@ -722,28 +718,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "SpaceJump"
-                  ]
-                },
-                {
-                  "name": "Springball",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "HiJump",
-                    "h_canUseSpringBall"
-                  ],
-                  "note": "By springballing through the room Samus will not sink into the sand."
-                },
-                {
-                  "name": "Lazy Jumps",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand"
-                  ]
+                  "requires": ["Gravity"]
                 },
                 {
                   "name": "Suitless",
@@ -798,23 +773,24 @@
                   ]
                 },
                 {
-                  "name": "Springball",
+                  "name": "Gravity platforming",
                   "notable": false,
                   "requires": [
                     "Gravity",
-                    "HiJump",
-                    "h_canUseSpringBall"
-                  ],
-                  "note": "By springballing through the room Samus will not sink into the sand."
-                },
-                {
-                  "name": "Lazy Jumps",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand",
+                    {"or": [
+                      "canPlayInSand",
+                      "canWalljump",
+                      "h_canUseSpringBall",
+                      "canDownGrab"
+                    ]},
                     {"or": [
                       "canCarefulJump",
+                      "ScrewAttack",
+                      "Ice",
+                      {"enemyKill": {
+                        "enemies": [["Evir"]],
+                        "explicitWeapons": [ "Plasma", "Super", "PowerBombPeriphery" ]
+                      }},
                       {"enemyDamage": {
                         "enemy": "Evir",
                         "type": "particle",
@@ -842,15 +818,18 @@
                   "notable": false,
                   "requires": [
                     "Gravity",
-                    "SpaceJump"
-                  ]
-                },
-                {
-                  "name": "Lazy Jumps",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand"
+                    {"or": [
+                      "SpaceJump",
+                      "canPlayInSand",
+                      {"and": [
+                        "canConsecutiveWalljump",
+                        {"enemyDamage": {
+                          "enemy": "Evir",
+                          "type": "particle",
+                          "hits": 1
+                        }}
+                      ]}
+                    ]}
                   ]
                 },
                 {
