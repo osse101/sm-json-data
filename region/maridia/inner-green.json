@@ -1693,7 +1693,7 @@
                   "note": [
                     "Break the grapple block, then jump on the sand to get through the hole.",
                     "Break spin before touching the sand, and then spinjump to get a good jump off of the sand.",
-                    "A stationary spinjump can help."
+                    "Breaking spin after jumping from the sand will remove horizontal momentum, or a stationary spinjump can help."
                   ]
                 },
                 {
@@ -1748,7 +1748,7 @@
                     "Gets above the grapple block by doing a well-positioned and well-timed Gravity jump following a good jump off the sand.",
                     "It is also possible to do this off of a wall jump on the side immediately followed by a gravity jump.",
                     "Break spin before touching the sand, and then spinjump to get a good jump off of the sand.",
-                    "A stationary spinjump can help."
+                    "Breaking spin after jumping from the sand will remove horizontal momentum, or a stationary spinjump can help."
                   ]
                 },
                 {
@@ -1776,7 +1776,6 @@
                     "canSuitlessMaridia",
                     "HiJump",
                     "canFlatleyJump",
-                    "canCarefulJump",
                     "canSunkenTileWideWallClimb"
                   ],
                   "note": [
@@ -1863,8 +1862,16 @@
                   "notable": false,
                   "requires": [
                     "canSuitlessMaridia",
+                    "canPlayInSand"
+                  ],
+                  "note": "Jumping from the sand without HiJump is possible, but there is a softlock risk."
+                },
+                {
+                  "name": "Avoid Sand",
+                  "notable": false,
+                  "requires": [
+                    "canSuitlessMaridia",
                     {"or": [
-                      "canPlayInSand",
                       {"and": [
                         "HiJump",
                         "h_canUseSpringBall"
@@ -1872,8 +1879,8 @@
                       {"and": [
                         "canFlatleyJump",
                         {"or": [
-                          "canDownBack",
-                          "canTrickyJump"
+                          "canTrickyJump",
+                          "canDownBack"
                         ]}
                       ]},
                       "canWalljump",
@@ -1881,9 +1888,10 @@
                     ]}
                   ],
                   "note": [
-                    "Jumping from the sand without HiJump is possible, but there is a softlock risk.",
-                    "Using movement tricks to reduce fall speed even slightly can avoid touching the sand."
-                  ]
+                    "Using movement tricks to reduce fall speed even slightly can avoid touching the sand.",
+                    "A Flatley style turnaround over the grapple block hole reduces fall speed some, but also needs a down back or a tiny jump."
+                  ],
+                  "devNote": "The or following canFlatleyJump has no logical relevance but indicates there are two distinct ways of using the flatley jump."
                 }
               ],
               "devNote": "This link assumes the grapple block has been broken from below."
