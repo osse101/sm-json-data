@@ -1819,14 +1819,7 @@
                 {
                   "name": "Gravity",
                   "notable": false,
-                  "requires": [
-                    "Gravity",
-                    {"or": [
-                      "canPlayInSand",
-                      "SpaceJump", 
-                      "h_canUseSpringBall"
-                    ]}
-                  ]
+                  "requires": ["Gravity"]
                 },
                 {
                   "name": "Suitless",
