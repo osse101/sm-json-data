@@ -2970,7 +2970,6 @@
                   "notable": false,
                   "requires": [
                     "Gravity",
-                    "canPlayInSand",
                     {"or": [
                       {"and": [
                         "HiJump",
@@ -3233,7 +3232,6 @@
                   "requires": [
                     "Gravity",
                     "canWalljump",
-                    "canPlayInSand",
                     {"or": [
                       "HiJump",
                       "canConsecutiveWalljump",
@@ -5117,10 +5115,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand"
-                  ]
+                  "requires": ["Gravity"]
                 },
                 {
                   "name": "Suitless",
@@ -5163,10 +5158,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand"
-                  ]
+                  "requires": ["Gravity"]
                 },
                 {
                   "name": "Suitless",
@@ -5350,19 +5342,7 @@
                 {
                   "name": "Base",
                   "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPlayInSand"
-                  ]
-                },
-                {
-                  "name": "Avoid Sand",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "canPrepareForNextRoom",
-                    "h_canUseSpringBall"
-                  ]
+                  "requires": ["Gravity"]
                 },
                 {
                   "name": "Suitless",
@@ -5404,12 +5384,22 @@
                   "name": "Base",
                   "notable": false,
                   "requires": [
-                    "Morph",
                     "Gravity",
-                    "canPlayInSand",
+                    "Morph",
                     {"or": [
                       "SpaceJump",
-                      "canWalljump",
+                      "canWalljump"
+                    ]}
+                  ]
+                },
+                {
+                  "name": "Gravity on Sand",
+                  "notable": false,
+                  "requires": [
+                    "Gravity",
+                    "Morph",
+                    "canPlayInSand",
+                    {"or": [
                       "HiJump",
                       "canSpringBallJumpMidAir",
                       {"and": [
@@ -5420,19 +5410,6 @@
                         "h_canUseSpringBall",
                         "canJumpIntoIBJ"
                       ]}
-                    ]}
-                  ]
-                },
-                {
-                  "name": "Avoid Sand",
-                  "notable": false,
-                  "requires": [
-                    "Gravity",
-                    "h_canUseSpringBall",
-                    "canPrepareForNextRoom",
-                    {"or": [
-                      "canJumpIntoIBJ",
-                      "SpaceJump"
                     ]}
                   ]
                 },
