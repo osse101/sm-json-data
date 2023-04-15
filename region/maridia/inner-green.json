@@ -1848,7 +1848,7 @@
                         ]}
                       ]},
                       "canWalljump",
-                      "canResetFallSpeed"
+                      "h_canResetFallSpeed"
                     ]}
                   ],
                   "note": [
