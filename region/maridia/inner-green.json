@@ -1686,7 +1686,7 @@
                     "Gravity",
                     "Grapple",
                     "canPlayInSand",
-                    "canJumpIntoIBJ",
+                    "h_canJumpIntoIBJ",
                     "canTrickyJump"
                   ],
                   "note": "Wait for a good jump out of the sand to begin the IBJ with.  A stationary spinjump can help."
