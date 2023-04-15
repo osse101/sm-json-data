@@ -5404,11 +5404,11 @@
                       "canSpringBallJumpMidAir",
                       {"and": [
                         "canBombJumpOnSand",
-                        "canJumpIntoIBJ"
+                        "h_canJumpIntoIBJ"
                       ]},
                       {"and": [
                         "h_canUseSpringBall",
-                        "canJumpIntoIBJ"
+                        "h_canJumpIntoIBJ"
                       ]}
                     ]}
                   ]
@@ -5588,7 +5588,7 @@
                       "SpaceJump",
                       {"and": [
                         "h_canUseSpringBall",
-                        "canJumpIntoIBJ"
+                        "h_canJumpIntoIBJ"
                       ]}
                     ]}
                   ],
@@ -5604,7 +5604,7 @@
                       "HiJump",
                       "canSpringBallJumpMidAir",
                       "canWalljump",
-                      "canIBJ"
+                      "h_canIBJ"
                     ]}
                   ],
                   "note": "Gravity with a good jump from the sand can reach the Solid Rock Maze region."
@@ -5859,7 +5859,7 @@
                     ]}
                   ],
                   "note": "Springball bounce on top of the crumble blocks.  Use either a bomb or HiJump to gain a little bit of extra height.",
-                  "devNote": "FIXME: Jumping onto a single bomb should be a tech.  Its like canJumpIntoIBJ except not an IBJ and works with powerbombs."
+                  "devNote": "FIXME: Jumping onto a single bomb should be a tech.  Its like h_canJumpIntoIBJ except not an IBJ and works with powerbombs."
                 },
                 {
                   "name": "West Sand Hole MidAir Morph (Bootless Suitless)",
@@ -5896,7 +5896,7 @@
                   "notable": true,
                   "requires": [
                     "canSuitlessMaridia",
-                    "canJumpIntoIBJ",
+                    "h_canJumpIntoIBJ",
                     "canBombJumpWaterEscape",
                     "canCrumbleJump"
                   ],
