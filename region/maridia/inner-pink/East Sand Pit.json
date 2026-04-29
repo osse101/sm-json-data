@@ -165,7 +165,7 @@
         {"or": [
           {"and": [
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canGravityJump",
               "HiJump"
             ]},
@@ -231,7 +231,7 @@
         {"notable": "Underwater Wall Jump"},
         "Morph",
         "canPlayInSand",
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -244,10 +244,10 @@
       "requires": [
         {"notable": "Insane Walljump Morph"},
         "canSuitlessMaridia",
-        "canConsecutiveWalljump",
+        "canConsecutiveWallJump",
         "canPlayInSand",
         "HiJump",
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "can3HighWallMidAirMorph"
       ],
       "flashSuitChecked": true,
@@ -429,7 +429,7 @@
         "canSuitlessMaridia",
         "HiJump",
         "canTrickyJump",
-        "canConsecutiveWalljump",
+        "canConsecutiveWallJump",
         "canWallJumpInstantMorph"
       ],
       "flashSuitChecked": true,
@@ -668,7 +668,7 @@
       "requires": [
         {"or": [
           "Gravity",
-          "canWalljump"
+          "canWallJump"
         ]}
       ],
       "flashSuitChecked": true,

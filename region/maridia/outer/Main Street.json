@@ -330,7 +330,7 @@
       "requires": [
         "Gravity",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "canGravityJump",
           "SpaceJump",
           "canIBJ",
@@ -1109,7 +1109,7 @@
           "canGravityJump",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "Gravity",
@@ -1121,7 +1121,7 @@
             {"or": [
               {"and": [
                 {"notable": "Underwater Walljumps"},
-                "canUnderwaterWalljump"
+                "canUnderwaterWallJump"
               ]},
               "canSpringBallJumpMidAir",
               {"and": [
@@ -1164,7 +1164,7 @@
           "canGravityJump",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "Gravity",
@@ -1176,7 +1176,7 @@
             {"or": [
               {"and": [
                 {"notable": "Underwater Walljumps"},
-                "canUnderwaterWalljump"
+                "canUnderwaterWallJump"
               ]},
               "canSpringBallJumpMidAir",
               {"and": [
@@ -2266,7 +2266,7 @@
           "canGravityJump",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "Gravity",
@@ -2278,7 +2278,7 @@
             {"or": [
               {"and": [
                 {"notable": "Underwater Walljumps"},
-                "canUnderwaterWalljump"
+                "canUnderwaterWallJump"
               ]},
               "canSpringBallJumpMidAir",
               {"and": [
@@ -2320,7 +2320,7 @@
           "canGravityJump",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "Gravity",
@@ -2332,7 +2332,7 @@
             {"or": [
               {"and": [
                 {"notable": "Underwater Walljumps"},
-                "canUnderwaterWalljump"
+                "canUnderwaterWallJump"
               ]},
               "canSpringBallJumpMidAir",
               {"and": [
@@ -2446,7 +2446,7 @@
           "types": ["missiles", "powerbomb"],
           "requires": [
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canGravityJump"
             ]}
           ]
@@ -2491,7 +2491,7 @@
           "types": ["missiles", "powerbomb"],
           "requires": [
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canGravityJump"
             ]}
           ]
@@ -2637,7 +2637,7 @@
             "canDash",
             {"or": [
               "HiJump",
-              "canWalljump",
+              "canWallJump",
               "SpaceJump"
             ]},
             {"or": [
@@ -3384,7 +3384,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canUseFrozenEnemies",
@@ -3449,7 +3449,7 @@
       "name": "Underwater Walljump (Middle)",
       "requires": [
         {"notable": "Underwater Walljumps"},
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -5222,7 +5222,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canSpringBallJumpMidAir",
@@ -5328,7 +5328,7 @@
       "name": "Underwater Walljump (Bottom)",
       "requires": [
         {"notable": "Underwater Walljumps"},
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -5647,7 +5647,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canSpringBallJumpMidAir",
@@ -5677,7 +5677,7 @@
       "name": "Underwater Walljump (Top)",
       "requires": [
         {"notable": "Underwater Walljumps"},
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -6137,7 +6137,7 @@
           "canGravityJump",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "Gravity",
@@ -6149,7 +6149,7 @@
               "canSpringBallJumpMidAir",
               {"and": [
                 {"notable": "Underwater Walljumps"},
-                "canUnderwaterWalljump"
+                "canUnderwaterWallJump"
               ]}
             ]}
           ]},
@@ -6190,7 +6190,7 @@
           "canGravityJump",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "HiJump",
@@ -6198,7 +6198,7 @@
               "canSpringBallJumpMidAir",
               {"and": [
                 {"notable": "Underwater Walljumps"},
-                "canUnderwaterWalljump"
+                "canUnderwaterWallJump"
               ]}
             ]}
           ]},

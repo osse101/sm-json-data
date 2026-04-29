@@ -1141,7 +1141,7 @@
     {
       "id": 101,
       "link": [3, 2],
-      "name": "Come in Shinecharged - Gain Blue Suit (X-Mode Super Jump)",
+      "name": "Come in Shinecharged - Gain Blue Suit (X-Mode Superjump)",
       "entranceCondition": {
         "comeInShinecharged": {}
       },
@@ -1156,7 +1156,7 @@
             "excludedWeapons": ["Bombs"]
           }}
         ]},
-        "canSuperJump",
+        "canSuperjump",
         {"shinespark": {"frames": 4, "excessFrames": 0}}
       ],
       "flashSuitChecked": true,
@@ -1169,7 +1169,7 @@
     {
       "id": 102,
       "link": [3, 2],
-      "name": "Gain Blue Suit (Double X-Mode Super Jump)",
+      "name": "Gain Blue Suit (Double X-Mode Superjump)",
       "requires": [
         {"or": [
           "h_thornDoubleXModeBlueSuit",
@@ -1185,7 +1185,7 @@
             ]}
           ]}
         ]},
-        "canSuperJump",
+        "canSuperjump",
         {"shinespark": {"frames": 4, "excessFrames": 0}}
       ],
       "flashSuitChecked": true,
@@ -1467,6 +1467,40 @@
       "detailNote": [
         "By holding an angle button, it is possible turn around in X-mode without losing dash speed.",
         "Arm pumps can be used to get close to the ledge before shinecharging, to leave with more frames remaining."
+      ]
+    },
+    {
+      "id": 122,
+      "link": [3, 3],
+      "name": "Leave With Temporary Blue (X-Mode Shinecharge)",
+      "requires": [
+        "canXMode",
+        "h_shinechargeMaxRunway",
+        "canChainTemporaryBlue",
+        {"thornHits": 1},
+        {"or": [
+          {"thornHits": "n_thornXModeLenience"},
+          {"obstaclesCleared": ["A"]},
+          "canTrickyDodgeEnemies",
+          {"enemyKill": {
+            "enemies": [["Beetom", "Beetom"]],
+            "excludedWeapons": ["Bombs"]
+          }}
+        ]}
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": [
+        "With some dash speed, bounce into the opening of the spikeway, and enter X-mode.",
+        "The spike knockback will push Samus back out of the spikeway.",
+        "By bouncing far enough left, it is possible to get a 2-frame window for the X-mode."
+      ],
+      "detailNote": [
+        "By holding an angle button, it is possible turn around in X-mode without losing dash speed.",
+        "Crouch to charge a shinespark, release dash to cancel X-Ray and exit out of X-Mode and hold angle until temporary blue."
       ]
     },
     {
@@ -3085,7 +3119,7 @@
       ]
     }
   ],
-  "nextStratId": 122,
+  "nextStratId": 123,
   "nextNotableId": 8,
   "devNote": ["FIXME: add a strat to take temporary blue from the top to the bottom-right."]
 }

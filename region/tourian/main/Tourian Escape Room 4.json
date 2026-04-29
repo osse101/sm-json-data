@@ -264,7 +264,7 @@
         "canComplexRModeCrystalFlashInterrupt",
         {"ammo": {"type": "Missile", "count": 10}},
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "HiJump",
           "SpaceJump",
           "canIBJ",
@@ -325,7 +325,7 @@
         {"or": [
           "HiJump",
           "SpaceJump",
-          "canWalljump",
+          "canWallJump",
           "canJumpIntoIBJ",
           {"and": [
             "canIBJ",
@@ -360,7 +360,7 @@
         "canDodgeWhileShooting",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "canTrickyDodgeEnemies",
             {"or": [
@@ -892,7 +892,7 @@
       "requires": [
         "ScrewAttack",
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           {"and": [
             "SpaceJump",
             "HiJump"
@@ -913,8 +913,8 @@
       "requires": [
         {"or": [
           {"and": [
-            "canConsecutiveWalljump",
-            "canWalljumpWithCharge"
+            "canConsecutiveWallJump",
+            "canWallJumpWithCharge"
           ]},
           {"and": [
             "SpaceJump",
@@ -946,7 +946,7 @@
         {"notable": "Dodge While Climbing"},
         "canCarefulJump",
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           {"and": [
             "HiJump",
             "SpaceJump"
@@ -1247,7 +1247,7 @@
       "link": [3, 1],
       "name": "Leave With Temporary Blue (Race the Acid)",
       "requires": [
-        "canFastWalljumpClimb",
+        "canFastWallJumpClimb",
         {"canShineCharge": {"usedTiles": 21, "openEnd": 1}},
         "canChainTemporaryBlue"
       ],
@@ -1292,7 +1292,7 @@
         {"or": [
           "HiJump",
           "SpaceJump",
-          "canWalljump",
+          "canWallJump",
           "h_crouchJumpDownGrab",
           "canJumpIntoIBJ",
           "canSpringBallJumpMidAir"

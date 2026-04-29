@@ -300,7 +300,7 @@
           ]},
           {"and": [
             "HiJump",
-            "canTrickyWalljump",
+            "canTrickyWallJump",
             {"cycleFrames": 960}
           ]},
           {"and": [
@@ -321,7 +321,7 @@
           {"and": [
             "canDoubleBombJump",
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "h_crouchJumpDownGrab"
             ]},
             {"cycleFrames": 1410}
@@ -492,7 +492,7 @@
         {"canShineCharge": {"usedTiles": 21, "openEnd": 0}},
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "canSpeedyJump",
           "canSpringBallJumpMidAir"
         ]},
@@ -533,7 +533,7 @@
                 ]},
                 {"or": [
                   "HiJump",
-                  "canWalljump"
+                  "canWallJump"
                 ]}
               ]},
               {"and": [
@@ -550,7 +550,7 @@
             {"or": [
               {"and": [
                 "canShinechargeMovementComplex",
-                "canWalljump"
+                "canWallJump"
               ]},
               {"and": [
                 "canShinechargeMovementTricky",
@@ -591,7 +591,7 @@
           {"and": [
             {"or": [
               "HiJump",
-              "canWalljump",
+              "canWallJump",
               "canSpeedyJump",
               "canTrickySpringBallJump",
               "SpaceJump"
@@ -600,7 +600,7 @@
           ]},
           {"and": [
             {"or": [
-              "canWalljump",
+              "canWallJump",
               {"and": [
                 "canShinechargeMovementTricky",
                 {"or": [
@@ -788,7 +788,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "h_crouchJumpDownGrab",
           "HiJump",
           "SpaceJump",
@@ -874,7 +874,7 @@
       "name": "HiJump Wall Jump",
       "requires": [
         "HiJump",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         {"or": [
           "canDodgeWhileShooting",
           {"obstaclesCleared": ["B"]}
@@ -891,7 +891,7 @@
       "requires": [
         "HiJump",
         "canSpeedyJump",
-        "canWalljump",
+        "canWallJump",
         {"or": [
           "canTrickyJump",
           {"obstaclesCleared": ["B"]}
@@ -975,7 +975,7 @@
       "requires": [
         "canTrickyUseFrozenEnemies",
         "canDodgeWhileShooting",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         {"or": [
           {"obstaclesCleared": ["B"]},
           "canTrickyDodgeEnemies"
@@ -997,8 +997,8 @@
       "link": [3, 1],
       "name": "HiJumpless Wall Jump",
       "requires": [
-        "canInsaneWalljump",
-        "canConsecutiveWalljump"
+        "canInsaneWallJump",
+        "canConsecutiveWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,

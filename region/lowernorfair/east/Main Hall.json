@@ -236,7 +236,7 @@
             {"heatFrames": 90},
             {"or": [
               "Gravity",
-              "canWalljump",
+              "canWallJump",
               {"and": [
                 "HiJump",
                 {"acidFrames": 20},
@@ -406,9 +406,7 @@
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
-      "note": [
-        "The flames are still active until they fully disperse."
-      ]
+      "note": ["The flames are still active until they fully disperse."]
     },
     {
       "id": 8,
@@ -855,7 +853,7 @@
             {"heatFrames": 90},
             {"or": [
               "Gravity",
-              "canWalljump",
+              "canWallJump",
               {"and": [
                 "HiJump",
                 {"acidFrames": 20},

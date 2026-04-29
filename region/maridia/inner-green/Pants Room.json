@@ -162,7 +162,7 @@
         "canOffScreenMovement",
         {"or": [
           "canTrickyJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump"
         ]}
       ],
@@ -566,10 +566,10 @@
           {"enemyDamage": {"enemy": "Menu", "type": "contact", "hits": 1}},
           "SpaceJump",
           {"and": [
-            "canConsecutiveWalljump",
+            "canConsecutiveWallJump",
             {"or": [
               "ScrewAttack",
-              "canTrickyWalljump"
+              "canTrickyWallJump"
             ]}
           ]},
           "h_pauseAbuseMinimalReserveRefill",
@@ -767,7 +767,7 @@
               "canDownBack"
             ]}
           ]},
-          "canWalljump",
+          "canWallJump",
           "canResetFallSpeed"
         ]}
       ],
@@ -805,12 +805,12 @@
       "name": "Wall Jump",
       "requires": [
         "Gravity",
-        "canConsecutiveWalljump",
+        "canConsecutiveWallJump",
         {"or": [
           "ScrewAttack",
           {"haveBlueSuit": {}},
-          "canTrickyWalljump",
-          "canWalljumpWithCharge",
+          "canTrickyWallJump",
+          "canWallJumpWithCharge",
           {"enemyDamage": {"enemy": "Menu", "type": "contact", "hits": 1}}
         ]}
       ],
@@ -827,7 +827,7 @@
         {"or": [
           {"and": [
             "canSpaceJumpWaterBounce",
-            "canWalljump"
+            "canWallJump"
           ]},
           "canSpaceJumpWaterEscape"
         ]},
@@ -835,7 +835,7 @@
         {"or": [
           {"enemyDamage": {"enemy": "Menu", "type": "contact", "hits": 1}},
           "ScrewAttack",
-          "canTrickyWalljump",
+          "canTrickyWallJump",
           "canPseudoScrew",
           {"haveBlueSuit": {}},
           "h_pauseAbuseMinimalReserveRefill"
@@ -883,7 +883,7 @@
       "link": [5, 2],
       "name": "Underwater Walljump Break Free",
       "requires": [
-        "canUnderwaterWalljumpBreakFree"
+        "canUnderwaterWallJumpBreakFree"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true
@@ -954,7 +954,7 @@
           "ScrewAttack",
           {"haveBlueSuit": {}}
         ]},
-        "canConsecutiveWalljump",
+        "canConsecutiveWallJump",
         {"cycleFrames": 1120}
       ],
       "farmCycleDrops": [{"enemy": "Menu", "count": 6}],

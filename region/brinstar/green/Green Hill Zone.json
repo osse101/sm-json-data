@@ -181,7 +181,7 @@
             {"shineChargeFrames": 130}
           ]},
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"shineChargeFrames": 170}
           ]},
           {"shineChargeFrames": 175}
@@ -335,7 +335,7 @@
           "canSpringBallJumpMidAir",
           {"and": [
             "canSpeedyJump",
-            "canWalljump"
+            "canWallJump"
           ]}
         ]}
       ],
@@ -348,7 +348,7 @@
       "name": "Wall Jump to Top Right Door",
       "requires": [
         {"notable": "Wall Jump to Top Right Door"},
-        "canPreciseWalljump"
+        "canPreciseWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -888,7 +888,7 @@
           "SpaceJump",
           "canLongIBJ",
           "canJumpIntoIBJ",
-          "canWalljump",
+          "canWallJump",
           "canUseFrozenEnemies",
           "canSpringBallJumpMidAir"
         ]}
@@ -1113,7 +1113,7 @@
       "link": [2, 2],
       "name": "Leave With Spark (Far Runway)",
       "requires": [
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         {"canShineCharge": {"usedTiles": 17, "openEnd": 1}},
         "canShinechargeMovementTricky",
         {"shinespark": {"frames": 19, "excessFrames": 0}}
@@ -1146,7 +1146,7 @@
           ]},
           {"and": [
             "canTrickyDashJump",
-            "canWalljump",
+            "canWallJump",
             "canShinechargeMovementTricky",
             {"shineChargeFrames": 155}
           ]}

@@ -286,7 +286,7 @@
           "explicitWeapons": ["PowerBomb"]
         }},
         "canMockball",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canInsaneJump",
         "canPauseAbuse",
         "canFarmWhileShooting",
@@ -886,10 +886,10 @@
         {"or": [
           {"and": [
             {"or": [
-              "canPreciseWalljump",
+              "canPreciseWallJump",
               {"and": [
                 "HiJump",
-                "canWalljump"
+                "canWallJump"
               ]}
             ]},
             {"lavaFrames": 30}
@@ -923,7 +923,7 @@
         {"heatFrames": 50},
         {"or": [
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"lavaFrames": 30}
           ]},
           {"and": [

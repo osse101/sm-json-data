@@ -713,7 +713,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canUseFrozenEnemies",
@@ -732,7 +732,7 @@
         {"notable": "Suitless Walljump Climb with HiJump"},
         "canSuitlessMaridia",
         "HiJump",
-        "canConsecutiveWalljump"
+        "canConsecutiveWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -1612,7 +1612,7 @@
             {"resetRoom": {"nodes": [3]}},
             "Gravity",
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "HiJump",
               "SpaceJump"
             ]},
@@ -2487,7 +2487,7 @@
             "canPrepareForNextRoom",
             {"or": [
               "canResetFallSpeed",
-              "canPreciseWalljump"
+              "canPreciseWallJump"
             ]},
             "canFarmWhileShooting",
             "h_underwaterCrouchJump"

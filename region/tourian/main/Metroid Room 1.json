@@ -632,7 +632,7 @@
       "requires": [
         {"notable": "Acid Skip CWJ"},
         "canCWJ",
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         {"or": [
           {"obstaclesCleared": ["A", "B"]},
           "canDodgeWhileShooting"
@@ -801,7 +801,7 @@
           ]},
           {"and": [
             {"or": [
-              "canWalljump",
+              "canPreciseWallJump",
               "HiJump"
             ]},
             {"acidFrames": 20}
@@ -815,7 +815,7 @@
             "canPseudoScrew",
             {"or": [
               "canTrickyJump",
-              "canWalljumpWithCharge",
+              "canWallJumpWithCharge",
               "HiJump",
               "Gravity"
             ]}
@@ -839,7 +839,7 @@
             {"acidFrames": 30}
           ]},
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"acidFrames": 60}
           ]},
           {"and": [
@@ -865,7 +865,7 @@
             {"acidFrames": 15}
           ]},
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"acidFrames": 20}
           ]},
           {"and": [
@@ -893,7 +893,7 @@
             {"acidFrames": 15}
           ]},
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"acidFrames": 20}
           ]},
           {"and": [
@@ -992,10 +992,11 @@
       "note": "Bomb Jump between the two floating platforms."
     },
     {
+      "id": 100,
       "link": [1, 2],
       "name": "Walljump Bomb Boost",
       "requires": [
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "canWallJumpBombBoost",
         "canHBJ",
         {"or": [
@@ -1252,7 +1253,7 @@
         "h_speedJump",
         "canCarefulJump",
         {"or": [
-          "canPreciseWalljump",
+          "canPreciseWallJump",
           "canTrickyJump"
         ]},
         {"or": [
@@ -1266,7 +1267,7 @@
           {"acidFrames": 27},
           {"and": [
             {"acidFrames": 16},
-            "canPreciseWalljump"
+            "canPreciseWallJump"
           ]},
           {"and": [
             {"acidFrames": 16},
@@ -1372,17 +1373,17 @@
       "requires": [
         {"or": [
           {"and": [
-            "canTrickyWalljump",
+            "canTrickyWallJump",
             {"acidFrames": 20}
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"acidFrames": 50}
           ]},
           {"and": [
             "HiJump",
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"acidFrames": 20}
           ]},
           {"and": [
@@ -1409,7 +1410,7 @@
           ]},
           {"and": [
             "canTrickyJump",
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"acidFrames": 16}
           ]},
           {"and": [
@@ -1439,7 +1440,7 @@
             {"acidFrames": 30}
           ]},
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"acidFrames": 40}
           ]},
           {"acidFrames": 80}
@@ -1534,7 +1535,7 @@
           ]},
           {"and": [
             "canTrickyJump",
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"acidFrames": 16}
           ]},
           {"and": [
@@ -1574,10 +1575,11 @@
       "blueSuitChecked": true
     },
     {
+      "id": 101,
       "link": [2, 1],
       "name": "Walljump Bomb Boost",
       "requires": [
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "canWallJumpBombBoost",
         "canHBJ",
         {"or": [
@@ -1630,7 +1632,7 @@
           ]},
           {"and": [
             "canTrickyJump",
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"acidFrames": 16}
           ]},
           {"and": [
@@ -1665,7 +1667,7 @@
           ]},
           {"and": [
             "canTrickyJump",
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"acidFrames": 16}
           ]},
           {"and": [
@@ -2334,6 +2336,6 @@
       ]
     }
   ],
-  "nextStratId": 100,
+  "nextStratId": 102,
   "nextNotableId": 4
 }

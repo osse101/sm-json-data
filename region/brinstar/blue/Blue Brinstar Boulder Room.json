@@ -448,7 +448,7 @@
       },
       "requires": [
         "canTrickyJump",
-        "canPreciseWalljump"
+        "canPreciseWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -513,7 +513,7 @@
       "name": "Doorsill Jump",
       "requires": [
         "canDash",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canTrickyJump",
         {"or": [
           {"spikeHits": 1},
@@ -674,7 +674,7 @@
         }
       },
       "requires": [
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canTrickyJump",
         {"or": [
           {"spikeHits": 1},
@@ -956,7 +956,7 @@
       "requires": [
         "SpaceJump",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "canSpaceJumpWaterEscape",
             "HiJump"
@@ -995,7 +995,7 @@
       "name": "Naked Walljump",
       "requires": [
         "canSuitlessMaridia",
-        "canInsaneWalljump"
+        "canInsaneWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -1037,7 +1037,7 @@
         {"doorUnlockedAtNode": 2},
         {"or": [
           "canDownGrab",
-          "canWalljump",
+          "canWallJump",
           "Gravity",
           "HiJump",
           "canTrickySpringBallJump"

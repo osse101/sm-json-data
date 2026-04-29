@@ -279,7 +279,7 @@
           {"cycleFrames": 120}
         ]},
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "HiJump",
           {"and": [
             "SpaceJump",
@@ -433,7 +433,7 @@
       "requires": [
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canSpringBallJumpMidAir",
           {"and": [
@@ -541,7 +541,7 @@
       "requires": [
         "Gravity",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "HiJump",
           "canSpringBallJumpMidAir",
           "SpaceJump",
@@ -566,7 +566,7 @@
         {"or": [
           "h_underwaterCrouchJumpDownGrab",
           "canTrickySpringBallJump",
-          "canWalljump"
+          "canWallJump"
         ]}
       ],
       "flashSuitChecked": true,
@@ -628,7 +628,7 @@
           {"and": [
             {"shinespark": {"frames": 90, "excessFrames": 59}},
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "HiJump",
               "canSpringBallJumpMidAir",
               "SpaceJump",
@@ -1322,7 +1322,7 @@
         "canSuitlessMaridia",
         "canSpringBallJumpMidAir",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "h_underwaterCrouchJumpDownGrab",
           "canTrickySpringBallJump"
         ]}
@@ -1441,7 +1441,7 @@
         {"or": [
           "HiJump",
           "canTrickySpringBallJump",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "canGravityJump",
             "canShinechargeMovementTricky"
@@ -1874,8 +1874,8 @@
                 {"cycleFrames": 230}
               ]},
               {"and": [
-                "canTrickyWalljump",
-                "canConsecutiveWalljump",
+                "canTrickyWallJump",
+                "canConsecutiveWallJump",
                 {"cycleFrames": 310}
               ]},
               {"and": [
@@ -1963,7 +1963,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           "SpaceJump",
           "canLongIBJ"
         ]}
@@ -1978,7 +1978,7 @@
       "requires": [
         "canTrickyUseFrozenEnemies",
         "HiJump",
-        "canWalljump"
+        "canWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true
@@ -2218,7 +2218,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           "SpaceJump",
           "canLongIBJ"
         ]},
@@ -2233,7 +2233,7 @@
       "name": "Screw Kill",
       "requires": [
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           "SpaceJump"
         ]},
         {"or": [
@@ -2245,8 +2245,8 @@
             {"or": [
               "SpaceJump",
               {"and": [
-                "canConsecutiveWalljump",
-                "canWalljumpWithCharge"
+                "canConsecutiveWallJump",
+                "canWallJumpWithCharge"
               ]}
             ]},
             {"enemyKill": {
@@ -2265,7 +2265,7 @@
       "name": "Carefully Kill Choot",
       "requires": [
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           "SpaceJump",
           "canLongIBJ"
         ]},
@@ -2293,7 +2293,7 @@
       "name": "Kill Choot and Reclimb",
       "requires": [
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           "SpaceJump",
           "canLongIBJ"
         ]},
@@ -2798,7 +2798,7 @@
       "link": [5, 4],
       "name": "Base",
       "requires": [
-        "canPreciseWalljump"
+        "canPreciseWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true

@@ -1359,7 +1359,7 @@
         "Gravity",
         {"or": [
           "canPlayInSand",
-          "canWalljump",
+          "canWallJump",
           "h_useSpringBall",
           "canCarefulJump"
         ]},
@@ -1563,7 +1563,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canPreciseWalljump",
+          "canPreciseWallJump",
           "canPlayInSand"
         ]},
         {"or": [

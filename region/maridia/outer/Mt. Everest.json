@@ -269,7 +269,7 @@
               "HiJump",
               "canSpringBallJumpMidAir",
               "canGravityJump",
-              "canConsecutiveWalljump",
+              "canConsecutiveWallJump",
               "canSpeedyJump"
             ]}
           ]}
@@ -481,7 +481,7 @@
               "HiJump",
               "canSpringBallJumpMidAir",
               "canGravityJump",
-              "canConsecutiveWalljump",
+              "canConsecutiveWallJump",
               "canSpeedyJump"
             ]}
           ]}
@@ -1430,7 +1430,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "canSpeedyJump",
           "SpaceJump",
           "canIBJ",
@@ -1513,7 +1513,7 @@
       "link": [2, 7],
       "name": "Underwater Walljump",
       "requires": [
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true
@@ -2020,7 +2020,7 @@
       "requires": [
         "canCrossRoomJumpIntoWater",
         "HiJump",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canDownGrab",
         "canTrickyJump"
       ],
@@ -2149,7 +2149,7 @@
             "Gravity",
             {"or": [
               "HiJump",
-              "canWalljump",
+              "canWallJump",
               "canSpeedyJump",
               "SpaceJump",
               "canSpringBallJumpMidAir",
@@ -2169,7 +2169,7 @@
                 "HiJump",
                 "canSpringBallJumpMidAir"
               ]},
-              "canUnderwaterWalljump"
+              "canUnderwaterWallJump"
             ]}
           ]}
         ]}
@@ -2268,7 +2268,7 @@
         {"or": [
           "canGravityJump",
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canJumpIntoIBJ",
           "canSpringBallJumpMidAir"
@@ -2306,7 +2306,7 @@
               {"and": [
                 "Gravity",
                 {"or": [
-                  "canWalljump",
+                  "canWallJump",
                   "HiJump",
                   {"and": [
                     "canSpringBallJumpMidAir",
@@ -2450,7 +2450,7 @@
         "Gravity",
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canSpringBallJumpMidAir"
@@ -2526,7 +2526,7 @@
       "link": [3, 7],
       "name": "Underwater Walljump",
       "requires": [
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true
@@ -2940,7 +2940,7 @@
             "Gravity",
             {"or": [
               "HiJump",
-              "canWalljump",
+              "canWallJump",
               "SpaceJump",
               "canIBJ",
               "canSpringBallJumpMidAir",
@@ -2955,7 +2955,7 @@
                 "HiJump",
                 "canSpringBallJumpMidAir"
               ]},
-              "canUnderwaterWalljump"
+              "canUnderwaterWallJump"
             ]}
           ]},
           {"and": [
@@ -4270,6 +4270,7 @@
       "blueSuitChecked": true
     },
     {
+      "id": 293,
       "link": [6, 2],
       "name": "Avoid Crab",
       "requires": [
@@ -4278,7 +4279,9 @@
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
-      "note": ["Roll into the room to have the momentum to exit the morph tunnel before the crab blocks the path."]
+      "note": [
+        "Roll into the room to have the momentum to exit the morph tunnel before the crab blocks the path."
+      ]
     },
     {
       "id": 279,
@@ -4713,7 +4716,7 @@
             {"or": [
               "canGravityJump",
               "HiJump",
-              "canWalljump",
+              "canWallJump",
               "SpaceJump",
               "canIBJ",
               "canSpringBallJumpMidAir"
@@ -4750,7 +4753,7 @@
             {"or": [
               "canGravityJump",
               "HiJump",
-              "canWalljump",
+              "canWallJump",
               "SpaceJump",
               "canIBJ",
               "canSpringBallJumpMidAir"
@@ -4861,7 +4864,7 @@
                 {"cycleFrames": 1510},
                 "h_doubleEquipmentScreenCycleFrames",
                 {"or": [
-                  "canPreciseWalljump",
+                  "canPreciseWallJump",
                   "h_doubleEquipmentScreenCycleFrames"
                 ]}
               ]},
@@ -4893,7 +4896,7 @@
                 {"resetRoom": {"nodes": [2]}},
                 {"cycleFrames": 1125},
                 {"or": [
-                  "canWalljump",
+                  "canWallJump",
                   {"and": [
                     "canGravityJump",
                     {"cycleFrames": 55},
@@ -4910,7 +4913,7 @@
                 {"resetRoom": {"nodes": [3]}},
                 {"cycleFrames": 1145},
                 {"or": [
-                  "canWalljump",
+                  "canWallJump",
                   {"and": [
                     "canGravityJump",
                     {"cycleFrames": 80},
@@ -4931,7 +4934,7 @@
                 "Morph",
                 {"cycleFrames": 1400},
                 {"or": [
-                  "canWalljump",
+                  "canWallJump",
                   {"and": [
                     "canGravityJump",
                     {"cycleFrames": 55},
@@ -4968,7 +4971,7 @@
           {"cycleFrames": 400}
         ]},
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "SpaceJump"
         ]},
         {"or": [
@@ -5191,7 +5194,7 @@
       "name": "Insane Walljump",
       "requires": [
         "Gravity",
-        "canInsaneWalljump"
+        "canInsaneWallJump"
       ],
       "clearsObstacles": ["A", "B"],
       "flashSuitChecked": true,
@@ -5207,7 +5210,7 @@
         "Gravity",
         "HiJump",
         "canTrickyDashJump",
-        "canWalljump"
+        "canWallJump"
       ],
       "clearsObstacles": ["A", "B"],
       "flashSuitChecked": true,
@@ -5398,7 +5401,7 @@
         "canTrickyJump",
         "canCameraManip",
         {"or": [
-          "canUnderwaterWalljump",
+          "canUnderwaterWallJump",
           "h_underwaterCrouchJumpDownGrab",
           "canFlatleyJump",
           "canInsaneJump"
@@ -5606,7 +5609,7 @@
           ]},
           "HiJump",
           "SpaceJump",
-          "canWalljump",
+          "canWallJump",
           "canGravityJump",
           "canIBJ",
           "canSpringBallJumpMidAir"
@@ -5654,7 +5657,7 @@
       "link": [8, 11],
       "name": "Underwater Walljump",
       "requires": [
-        "canUnderwaterWalljump"
+        "canUnderwaterWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true
@@ -5832,7 +5835,7 @@
       "name": "First Frame Dash Jump with Wall Jump",
       "requires": [
         "Gravity",
-        "canWalljump",
+        "canWallJump",
         "canTrickyDashJump"
       ],
       "flashSuitChecked": true,
@@ -6024,7 +6027,7 @@
               {"and": [
                 "HiJump",
                 "canTrickyDashJump",
-                "canWalljump"
+                "canWallJump"
               ]},
               "canGravityJump"
             ]}
@@ -6111,14 +6114,14 @@
       "requires": [
         "Gravity",
         {"or": [
-          "canTrickyWalljump",
+          "canTrickyWallJump",
           {"and": [
             "HiJump",
-            "canPreciseWalljump"
+            "canPreciseWallJump"
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             "canSpeedyJump"
           ]}
         ]}
@@ -6380,7 +6383,7 @@
           {"and": [
             "HiJump",
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canTrickyDashJump"
             ]}
           ]}
@@ -6782,7 +6785,7 @@
       ]
     }
   ],
-  "nextStratId": 293,
+  "nextStratId": 294,
   "nextNotableId": 14,
   "devNote": [
     "FIXME: A 4->6 grapple teleport is possible, but the wrong-side transition will usually put Samus out-of-bounds. "

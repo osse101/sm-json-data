@@ -955,7 +955,7 @@
         ]},
         {"or": [
           "SpaceJump",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "Grapple",
             "h_midAirShootUp",
@@ -985,7 +985,7 @@
         "canPrepareForNextRoom",
         {"or": [
           "SpaceJump",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "Grapple",
             "h_midAirShootUp",
@@ -1310,9 +1310,9 @@
     {
       "id": 103,
       "link": [1, 3],
-      "name": "Gain Blue Suit - Super Jump (Double X-Mode)",
+      "name": "Gain Blue Suit - Superjump (Double X-Mode)",
       "requires": [
-        "canSuperJump",
+        "canSuperjump",
         {"obstaclesCleared": ["A"]},
         {"obstaclesCleared": ["B"]},
         "h_destroyBombWalls",
@@ -1632,7 +1632,7 @@
       "link": [2, 2],
       "name": "Sidehopper Farm",
       "requires": [
-        "canWalljump",
+        "canWallJump",
         "canTrickyJump",
         {"resetRoom": {"nodes": [2]}},
         {"or": [
@@ -1719,7 +1719,7 @@
       "name": "Base",
       "requires": [
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canLongIBJ",
           {"and": [
@@ -2660,7 +2660,7 @@
       "requires": [
         {"obstaclesCleared": ["B"]},
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "Grapple",
           {"and": [

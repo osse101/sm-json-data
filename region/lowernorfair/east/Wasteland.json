@@ -338,11 +338,11 @@
         "canUseEnemies",
         {"or": [
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"heatFrames": 390}
           ]},
           {"and": [
-            "canConsecutiveWalljump",
+            "canConsecutiveWallJump",
             "canCarefulJump",
             {"heatFrames": 330}
           ]},

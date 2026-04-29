@@ -89,7 +89,7 @@
             "Gravity",
             {"or": [
               "SpaceJump",
-              "canWalljump"
+              "canWallJump"
             ]}
           ]}
         ]},
@@ -247,7 +247,7 @@
           "Grapple",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]}
         ]}
       ],
@@ -516,15 +516,15 @@
         {"or": [
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"or": [
               "canPlayInSand",
-              "canConsecutiveWalljump"
+              "canConsecutiveWallJump"
             ]}
           ]},
           {"and": [
-            "canTrickyWalljump",
-            "canConsecutiveWalljump"
+            "canTrickyWallJump",
+            "canConsecutiveWallJump"
           ]},
           {"and": [
             "canPreciseGrapple",
@@ -569,7 +569,7 @@
         {"notable": "Blue Suit Sand Traversal"},
         {"haveBlueSuit": {}},
         "Gravity",
-        "canConsecutiveWalljump"
+        "canConsecutiveWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -624,7 +624,7 @@
           {"and": [
             {"shinespark": {"frames": 128, "excessFrames": 21}},
             "canControlShinesparkEnd",
-            "canWalljump"
+            "canWallJump"
           ]}
         ]}
       ],
@@ -759,7 +759,7 @@
       "requires": [
         {"notable": "Spike Platforming with Move Assist (Left to Right)"},
         "canDash",
-        "canWalljump",
+        "canWallJump",
         "Morph",
         "canUseIFrames",
         {"or": [
@@ -800,7 +800,7 @@
       },
       "requires": [
         {"notable": "Spike Platforming with Spring Ball (Left to Right)"},
-        "canWalljump",
+        "canWallJump",
         "Morph",
         "canUseIFrames",
         "h_useSpringBall",
@@ -826,7 +826,7 @@
       "requires": [
         {"notable": "Spike Platforming with No Equipment"},
         "canDash",
-        "canWalljump",
+        "canWallJump",
         "canInsaneJump",
         "canHorizontalDamageBoost",
         "canUseIFrames",
@@ -1328,7 +1328,7 @@
       "link": [2, 2],
       "name": "Gain Flash Suit (X-Mode Spikesuit)",
       "requires": [
-        "canWalljump",
+        "canWallJump",
         "canTrickyUseFrozenEnemies",
         "canTrickySpikeSuit",
         "h_spikeXModeSpikeSuit",
@@ -1374,7 +1374,7 @@
           "Grapple",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]}
         ]}
       ],
@@ -1411,7 +1411,7 @@
       "requires": [
         "Gravity",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canLongIBJ",
           "canJumpIntoIBJ",
@@ -2054,7 +2054,7 @@
       "link": [2, 3],
       "name": "Underwater Wall Jump",
       "requires": [
-        "canUnderwaterWalljump",
+        "canUnderwaterWallJump",
         "canSpaceJumpWaterBounce"
       ],
       "flashSuitChecked": true,
@@ -2065,7 +2065,7 @@
       "link": [2, 3],
       "name": "Underwater Wall Jump Break Free",
       "requires": [
-        "canUnderwaterWalljumpBreakFree"
+        "canUnderwaterWallJumpBreakFree"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -2211,12 +2211,12 @@
         "canShinechargeMovementComplex",
         {"or": [
           {"and": [
-            "canConsecutiveWalljump",
+            "canConsecutiveWallJump",
             {"shineChargeFrames": 120}
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"shineChargeFrames": 95}
           ]}
         ]}
@@ -2243,12 +2243,12 @@
         "canShinechargeMovementComplex",
         {"or": [
           {"and": [
-            "canConsecutiveWalljump",
+            "canConsecutiveWallJump",
             {"shineChargeFrames": 120}
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"shineChargeFrames": 95}
           ]},
           {"and": [
@@ -2281,13 +2281,13 @@
         "canShinechargeMovementComplex",
         {"or": [
           {"and": [
-            "canConsecutiveWalljump",
+            "canConsecutiveWallJump",
             {"shineChargeFrames": 100},
             {"shinespark": {"frames": 6, "excessFrames": 0}}
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"or": [
               {"shineChargeFrames": 85},
               {"and": [
@@ -2336,13 +2336,13 @@
         "canShinechargeMovementComplex",
         {"or": [
           {"and": [
-            "canConsecutiveWalljump",
+            "canConsecutiveWallJump",
             {"shineChargeFrames": 100},
             {"shinespark": {"frames": 6, "excessFrames": 0}}
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"or": [
               {"shineChargeFrames": 75},
               {"and": [
@@ -2386,10 +2386,10 @@
       "requires": [
         "Gravity",
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           "Grapple",
           {"and": [
-            "canWalljump",
+            "canWallJump",
             "HiJump",
             "canPlayInSand"
           ]}
@@ -2431,7 +2431,7 @@
         {"notable": "Blue Suit Sand Traversal"},
         {"haveBlueSuit": {}},
         "Gravity",
-        "canConsecutiveWalljump"
+        "canConsecutiveWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -2487,7 +2487,7 @@
             {"shinespark": {"frames": 127, "excessFrames": 16}},
             "canControlShinesparkEnd",
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canTrickyJump"
             ]}
           ]}
@@ -2628,7 +2628,7 @@
         {"notable": "Bomb Jump Water Escape"},
         "canDash",
         "HiJump",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canUseIFrames",
         {"spikeHits": 1},
         "canNeutralDamageBoost",
@@ -2675,7 +2675,7 @@
       "requires": [
         {"notable": "Spike Platforming with No Equipment"},
         "canDash",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canInsaneJump",
         "canUseIFrames",
         {"spikeHits": 3},
@@ -2868,7 +2868,7 @@
         {"or": [
           {"shinespark": {"frames": 121, "excessFrames": 4}},
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"shinespark": {"frames": 110, "excessFrames": 4}}
           ]}
         ]}
@@ -3101,7 +3101,7 @@
             "Gravity",
             {"or": [
               "SpaceJump",
-              "canWalljump"
+              "canWallJump"
             ]}
           ]}
         ]},
@@ -3444,7 +3444,7 @@
           "Grapple",
           {"and": [
             "Gravity",
-            "canWalljump"
+            "canWallJump"
           ]}
         ]}
       ],

@@ -147,11 +147,11 @@
         {"or": [
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"cycleFrames": 450}
           ]},
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"cycleFrames": 600}
           ]},
           {"and": [
@@ -289,14 +289,14 @@
           "canTrickyDashJump",
           {"and": [
             "canTrickyUseFrozenEnemies",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             {"canShineCharge": {"usedTiles": 43, "openEnd": 0}},
             {"shinespark": {"frames": 9, "excessFrames": 5}}
           ]},
           {"and": [
-            "canInsaneWalljump",
+            "canInsaneWallJump",
             "canWallJumpInstantMorph",
             "canUnmorphBombBoost",
             "canDownGrab"
@@ -878,7 +878,7 @@
       "requires": [
         {"or": [
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             {"heatFrames": 150}
           ]},
           {"and": [
@@ -887,7 +887,7 @@
           ]},
           {"and": [
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             {"heatFrames": 180}
           ]},
           {"and": [
@@ -961,7 +961,7 @@
       "name": "Frozen Sova",
       "requires": [
         "canTrickyUseFrozenEnemies",
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 950}
       ],
       "flashSuitChecked": true,
@@ -974,7 +974,7 @@
       "name": "Sova Morph Only Boost",
       "requires": [
         {"notable": "Sova Morph Only Boost"},
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "canMidAirMorph",
         "canNeutralDamageBoost",
         {"enemyDamage": {"enemy": "Sova", "type": "contact", "hits": 1}},
@@ -1194,7 +1194,7 @@
         "canShinechargeMovementComplex",
         {"canShineCharge": {"usedTiles": 43, "openEnd": 0}},
         {"or": [
-          "canPreciseWalljump",
+          "canPreciseWallJump",
           "canTrickyJump",
           "SpaceJump"
         ]},
@@ -1236,7 +1236,7 @@
         ]},
         {"canShineCharge": {"usedTiles": 43, "openEnd": 0}},
         {"or": [
-          "canPreciseWalljump",
+          "canPreciseWallJump",
           "canInsaneJump",
           "SpaceJump"
         ]},
@@ -1267,7 +1267,7 @@
         "canHeroShot",
         {"canShineCharge": {"usedTiles": 43, "openEnd": 0}},
         {"or": [
-          "canPreciseWalljump",
+          "canPreciseWallJump",
           "canTrickyJump",
           "SpaceJump"
         ]},
@@ -1314,7 +1314,7 @@
         {"notable": "Speedy Jump (Left to Right)"},
         "canTrickyDashJump",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "h_heatProof",
           "canInsaneJump"
         ]},
@@ -1567,7 +1567,7 @@
       "name": "Walljump into Unmorph Bomb Boost",
       "requires": [
         "h_heatProof",
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "canWallJumpInstantMorph",
         "canUnmorphBombBoost",
         "canDownGrab",
@@ -1588,7 +1588,7 @@
       "name": "Sova Boost (Walljump)",
       "requires": [
         {"notable": "Sova Boost"},
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "canWallJumpInstantMorph",
         "canNeutralDamageBoost",
         "canCameraManip",

@@ -270,11 +270,7 @@
                 "hits": 1
               }}
             ]},
-            {"or": [
-              "Morph",
-              "canTurnaroundAimCancel",
-              "canXRayTurnaround"
-            ]}
+            "Morph"
           ]}
         ]}
       ],
@@ -329,7 +325,7 @@
         {"obstaclesCleared": ["A"]},
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canSpringBallJumpMidAir"
@@ -345,7 +341,7 @@
       "requires": [
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "SpaceJump",
           "canIBJ",
           "canSpringBallJumpMidAir"
@@ -814,11 +810,7 @@
                 "hits": 1
               }}
             ]},
-            {"or": [
-              "Morph",
-              "canTurnaroundAimCancel",
-              "canXRayTurnaround"
-            ]}
+            "Morph"
           ]}
         ]}
       ],

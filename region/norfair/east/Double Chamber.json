@@ -383,7 +383,7 @@
           "SpaceJump",
           "canTrickySpringBallJump",
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"or": [
               "canDash",
               "HiJump",
@@ -461,11 +461,11 @@
           {"and": [
             "canDash",
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             "canTrickyJump"
           ]},
           {"and": [
-            "canWalljump",
+            "canWallJump",
             "canUseIFrames",
             {"spikeHits": 1},
             "h_spikeJumpWithActiveEnemies"
@@ -601,14 +601,14 @@
             "HiJump",
             "canSpringBallJumpMidAir"
           ]},
-          "canInsaneWalljump",
+          "canInsaneWallJump",
           {"and": [
             "HiJump",
             "canUseIFrames",
             {"noBlueSuit": {}},
             {"enemyDamage": {"enemy": "Ripper 2 (green)", "type": "contact", "hits": 1}},
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canSpeedyJump"
             ]}
           ]},
@@ -683,8 +683,8 @@
       "name": "Walljump Climb Using the Kamer",
       "requires": [
         {"notable": "Walljump Climb Using the Kamer"},
-        "canTrickyWalljump",
-        "canConsecutiveWalljump",
+        "canTrickyWallJump",
+        "canConsecutiveWallJump",
         "canUseEnemies",
         {"or": [
           {"and": [
@@ -728,7 +728,7 @@
         {"notable": "Walljump Climb Using the Kamer"},
         "HiJump",
         "canUseEnemies",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         {"or": [
           {"heatFrames": 360},
           {"and": [
@@ -769,8 +769,8 @@
       "link": [2, 1],
       "name": "Delayed Wall Jump",
       "requires": [
-        "canTrickyWalljump",
-        "canConsecutiveWalljump",
+        "canTrickyWallJump",
+        "canConsecutiveWallJump",
         "canTrickyJump",
         "canUseEnemies",
         {"or": [
@@ -801,10 +801,10 @@
       },
       "requires": [
         "canPrepareForNextRoom",
-        "canTrickyWalljump",
-        "canConsecutiveWalljump",
+        "canTrickyWallJump",
+        "canConsecutiveWallJump",
         "canTrickyJump",
-        "canFastWalljumpClimb",
+        "canFastWallJumpClimb",
         "canUseEnemies",
         {"heatFrames": 120},
         {"or": [
@@ -817,7 +817,7 @@
       "note": "Wall jump up the left wall, perform a delayed wall jump on the Fune to reach the door.",
       "devNote": [
         "This differs from the canPrepareForNextRoom option of the previous strat only in requiring an air entry.",
-        "FIXME: canFastWalljumpClimb is for difficulty placement."
+        "FIXME: canFastWallJumpClimb is for difficulty placement."
       ]
     },
     {
@@ -1163,7 +1163,7 @@
         {"or": [
           "SpaceJump",
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             "canTrickyJump"
           ]}
         ]},
@@ -1366,7 +1366,7 @@
         {"or": [
           "SpaceJump",
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             "canTrickyJump"
           ]}
         ]},
@@ -1427,7 +1427,7 @@
       "requires": [
         {"or": [
           "SpaceJump",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"
@@ -1755,7 +1755,7 @@
           "SpaceJump",
           "canTrickySpringBallJump",
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"or": [
               "canDash",
               "HiJump",
@@ -1852,11 +1852,11 @@
           {"and": [
             "canDash",
             "HiJump",
-            "canWalljump",
+            "canWallJump",
             "canTrickyJump"
           ]},
           {"and": [
-            "canWalljump",
+            "canWallJump",
             "canUseIFrames",
             {"spikeHits": 1},
             "h_spikeJumpWithActiveEnemies"
@@ -1978,8 +1978,8 @@
       "link": [2, 4],
       "name": "Delayed Wall Jump",
       "requires": [
-        "canTrickyWalljump",
-        "canConsecutiveWalljump",
+        "canTrickyWallJump",
+        "canConsecutiveWallJump",
         "canTrickyJump",
         "canUseEnemies",
         "canPrepareForNextRoom",
@@ -2014,8 +2014,8 @@
       },
       "requires": [
         "canPrepareForNextRoom",
-        "canTrickyWalljump",
-        "canConsecutiveWalljump",
+        "canTrickyWallJump",
+        "canConsecutiveWallJump",
         "canTrickyJump",
         "canUseEnemies",
         "canPrepareForNextRoom",
@@ -2141,13 +2141,13 @@
       "name": "HiJump Wall Jump",
       "requires": [
         "HiJump",
-        "canWalljump",
+        "canWallJump",
         "canTrickyJump",
         {"or": [
           {"and": [
             "canHeroShot",
             {"heatFrames": 270},
-            "canInsaneWalljump",
+            "canInsaneWallJump",
             "h_trickyToCarryFlashSuit",
             "canBeVeryPatient"
           ]},
@@ -2230,7 +2230,7 @@
       "name": "Tricky Dash Jump Wall Jump",
       "requires": [
         "canTrickyDashJump",
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 300},
         {"or": [
           {"noFlashSuit": {}},
@@ -2318,7 +2318,7 @@
       "requires": [
         "canPrepareForNextRoom",
         "HiJump",
-        "canWalljump",
+        "canWallJump",
         "canTrickyJump",
         {"heatFrames": 260},
         {"or": [
@@ -2385,7 +2385,7 @@
         {"or": [
           "SpaceJump",
           "canSpringBallJumpMidAir",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"
@@ -2444,7 +2444,7 @@
         {"or": [
           "SpaceJump",
           "canSpringBallJumpMidAir",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"
@@ -2514,14 +2514,14 @@
             "HiJump",
             "canSpringBallJumpMidAir"
           ]},
-          "canInsaneWalljump",
+          "canInsaneWallJump",
           {"and": [
             "HiJump",
             "canUseIFrames",
             {"noBlueSuit": {}},
             {"enemyDamage": {"enemy": "Ripper 2 (green)", "type": "contact", "hits": 1}},
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "canSpeedyJump"
             ]}
           ]},
@@ -2706,10 +2706,10 @@
               "canInsaneJump"
             ]}
           ]},
-          "canInsaneWalljump",
+          "canInsaneWallJump",
           {"and": [
             "HiJump",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "HiJump",
@@ -2848,10 +2848,10 @@
               "canInsaneJump"
             ]}
           ]},
-          "canInsaneWalljump",
+          "canInsaneWallJump",
           {"and": [
             "HiJump",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "HiJump",
@@ -2979,7 +2979,7 @@
         {"or": [
           {"and": [
             "canTrickyDashJump",
-            "canWalljump"
+            "canWallJump"
           ]},
           "SpaceJump"
         ]},
@@ -3021,7 +3021,7 @@
         {"or": [
           {"and": [
             "canTrickyDashJump",
-            "canWalljump"
+            "canWallJump"
           ]},
           "SpaceJump"
         ]},
@@ -3113,7 +3113,7 @@
       "name": "X-Mode with Walljump",
       "requires": [
         "h_spikeXModeShinecharge",
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 540},
         {"shinespark": {"frames": 5}}
       ],
@@ -3138,7 +3138,7 @@
           ]},
           {"and": [
             {"heatFrames": 540},
-            "canWalljump",
+            "canWallJump",
             "canShinechargeMovementTricky",
             {"shineChargeFrames": 160}
           ]}
@@ -3184,10 +3184,10 @@
             "canUseEnemies"
           ]},
           "canSpringBallJumpMidAir",
-          "canInsaneWalljump",
+          "canInsaneWallJump",
           {"and": [
             "HiJump",
-            "canWalljump"
+            "canWallJump"
           ]},
           {"and": [
             "HiJump",
@@ -3482,7 +3482,7 @@
             {"heatFrames": 20}
           ]}
         ]},
-        "canWalljump",
+        "canWallJump",
         "HiJump",
         {"heatFrames": 230}
       ],
@@ -3498,7 +3498,7 @@
         "HiJump",
         "canInsaneJump",
         "canCrumbleJump",
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 340}
       ],
       "flashSuitChecked": true,
@@ -3576,7 +3576,7 @@
         ]},
         "canUseIFrames",
         "canTrickyDashJump",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         {"heatFrames": 260}
       ],
       "flashSuitChecked": true,
@@ -3627,7 +3627,7 @@
         "canDash",
         {"notable": "HiJumpless Wall Jump"},
         "h_heatProof",
-        "canInsaneWalljump",
+        "canInsaneWallJump",
         "canHorizontalDamageBoost",
         {"or": [
           "canUseIFrames",
@@ -3683,10 +3683,10 @@
             "canDash",
             {"or": [
               "canTrickySpringBallJump",
-              "canInsaneWalljump",
+              "canInsaneWallJump",
               {"and": [
                 "HiJump",
-                "canWalljump"
+                "canWallJump"
               ]},
               {"and": [
                 "HiJump",
@@ -3799,10 +3799,10 @@
             "canDash",
             {"or": [
               "canTrickySpringBallJump",
-              "canInsaneWalljump",
+              "canInsaneWallJump",
               {"and": [
                 "HiJump",
-                "canWalljump"
+                "canWallJump"
               ]},
               {"and": [
                 "HiJump",
@@ -3980,10 +3980,10 @@
             "canDash",
             {"or": [
               "canTrickySpringBallJump",
-              "canInsaneWalljump",
+              "canInsaneWallJump",
               {"and": [
                 "HiJump",
-                "canWalljump"
+                "canWallJump"
               ]},
               {"and": [
                 "HiJump",
@@ -4103,10 +4103,10 @@
             "canDash",
             {"or": [
               "canTrickySpringBallJump",
-              "canInsaneWalljump",
+              "canInsaneWallJump",
               {"and": [
                 "HiJump",
-                "canWalljump"
+                "canWallJump"
               ]},
               {"and": [
                 "HiJump",
@@ -4286,7 +4286,7 @@
       "name": "Walljump",
       "requires": [
         "canDash",
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 225}
       ],
       "collectsItems": [4],
@@ -4301,7 +4301,7 @@
         "canCrumbleJump",
         "canBlueSuitSpikeJump",
         {"spikeHits": 1},
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 420}
       ],
       "flashSuitChecked": true,
@@ -4351,7 +4351,7 @@
       "name": "Wall Jump Leave with Runway",
       "requires": [
         "canDash",
-        "canWalljump",
+        "canWallJump",
         {"heatFrames": 205}
       ],
       "exitCondition": {
@@ -4726,7 +4726,7 @@
                 "canSpeedyJump",
                 {"or": [
                   "Grapple",
-                  "canWalljump"
+                  "canWallJump"
                 ]},
                 {"cycleFrames": 1190}
               ]}
@@ -4764,7 +4764,7 @@
         {"or": [
           "SpaceJump",
           "canSpringBallJumpMidAir",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"
@@ -4805,7 +4805,7 @@
         {"or": [
           "SpaceJump",
           "canSpringBallJumpMidAir",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"
@@ -4887,7 +4887,7 @@
         {"or": [
           "SpaceJump",
           "canSpringBallJumpMidAir",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"
@@ -4925,7 +4925,7 @@
         {"or": [
           "SpaceJump",
           "canSpringBallJumpMidAir",
-          "canWalljump",
+          "canWallJump",
           {"and": [
             "HiJump",
             "canSpeedyJump"

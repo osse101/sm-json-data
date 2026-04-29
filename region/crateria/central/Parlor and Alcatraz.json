@@ -2003,11 +2003,11 @@
       "name": "Alcatraz Escape",
       "requires": [
         {"notable": "Alcatraz Escape"},
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "canWallJumpInstantMorph",
         {"or": [
           "HiJump",
-          "canConsecutiveWalljump"
+          "canConsecutiveWallJump"
         ]}
       ],
       "flashSuitChecked": true,
@@ -2556,7 +2556,7 @@
         {"shineChargeFrames": 165},
         "canShinechargeMovementComplex",
         "HiJump",
-        "canWalljump",
+        "canWallJump",
         "Morph"
       ],
       "exitCondition": {
@@ -2586,7 +2586,7 @@
         ]},
         "canShinechargeMovementComplex",
         "HiJump",
-        "canWalljump",
+        "canWallJump",
         "Morph",
         {"shinespark": {"frames": 5, "excessFrames": 0}}
       ],
@@ -2619,7 +2619,7 @@
         ]},
         "canShinechargeMovementComplex",
         "HiJump",
-        "canWalljump",
+        "canWallJump",
         "Morph",
         {"shinespark": {"frames": 3, "excessFrames": 0}}
       ],
@@ -3771,8 +3771,8 @@
               ]},
               {"and": [
                 {"notable": "Alcatraz Escape"},
-                "canPreciseWalljump",
-                "canConsecutiveWalljump",
+                "canPreciseWallJump",
+                "canConsecutiveWallJump",
                 "canWallJumpInstantMorph"
               ]},
               {"and": [

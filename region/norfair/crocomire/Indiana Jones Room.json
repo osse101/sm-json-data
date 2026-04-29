@@ -274,7 +274,7 @@
       },
       "requires": [
         "canSpeedyJump",
-        "canWalljump",
+        "canWallJump",
         "canCarefulJump"
       ],
       "flashSuitChecked": true,
@@ -291,8 +291,8 @@
       "requires": [
         {"shineChargeFrames": 110},
         "canShinechargeMovementComplex",
-        "canPreciseWalljump",
-        "canConsecutiveWalljump",
+        "canPreciseWallJump",
+        "canConsecutiveWallJump",
         {"shinespark": {"frames": 78}}
       ],
       "flashSuitChecked": true,
@@ -311,8 +311,8 @@
       },
       "requires": [
         "canShinechargeMovementComplex",
-        "canPreciseWalljump",
-        "canConsecutiveWalljump",
+        "canPreciseWallJump",
+        "canConsecutiveWallJump",
         {"shinespark": {"frames": 78}}
       ],
       "flashSuitChecked": true,
@@ -332,7 +332,7 @@
         "canShinechargeMovementComplex",
         {"or": [
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"shinespark": {"frames": 80}}
           ]},
           {"and": [
@@ -360,7 +360,7 @@
         "canShinechargeMovementComplex",
         {"or": [
           {"and": [
-            "canWalljump",
+            "canWallJump",
             {"shinespark": {"frames": 80}}
           ]},
           {"and": [
@@ -419,7 +419,7 @@
           {"and": [
             "canSpeedyJump",
             "HiJump",
-            "canTrickyWalljump"
+            "canTrickyWallJump"
           ]},
           "h_trickySpringwall"
         ]}
@@ -660,7 +660,7 @@
       "link": [2, 1],
       "name": "Wall Jump Shinespark to Left Door",
       "requires": [
-        "canWalljump",
+        "canWallJump",
         "canShinechargeMovementComplex",
         {"obstaclesCleared": ["B"]},
         {"or": [
@@ -776,7 +776,7 @@
       "requires": [
         {"obstaclesCleared": ["B", "E"]},
         {"canShineCharge": {"usedTiles": 32, "gentleUpTiles": 6, "openEnd": 1}},
-        "canWalljump",
+        "canWallJump",
         "canShinechargeMovementComplex",
         {"shinespark": {"frames": 85}}
       ],
@@ -1251,7 +1251,7 @@
               {"and": [
                 "HiJump",
                 "canSpeedyJump",
-                "canWalljump",
+                "canWallJump",
                 {"cycleFrames": 120}
               ]},
               {"and": [
@@ -1656,7 +1656,7 @@
         "canSpeedyJump",
         {"or": [
           "canSpringBallJumpMidAir",
-          "canWalljump"
+          "canWallJump"
         ]}
       ],
       "flashSuitChecked": true,
@@ -1725,7 +1725,7 @@
           "canTrickyJump",
           {"and": [
             {"or": [
-              "canWalljump",
+              "canWallJump",
               "HiJump"
             ]},
             {"acidFrames": 25}
@@ -2003,7 +2003,7 @@
       "requires": [
         "canSpeedyJump",
         "HiJump",
-        "canTrickyWalljump"
+        "canTrickyWallJump"
       ],
       "flashSuitChecked": true,
       "blueSuitChecked": true,
@@ -2092,7 +2092,7 @@
           {"and": [
             "HiJump",
             "canSpeedyJump",
-            "canTrickyWalljump"
+            "canTrickyWallJump"
           ]}
         ]},
         {"or": [
@@ -2223,7 +2223,7 @@
         {"notable": "Springwall"},
         "HiJump",
         "h_trickySpringwall",
-        "canPreciseWalljump",
+        "canPreciseWallJump",
         "can3HighWallMidAirMorph"
       ],
       "flashSuitChecked": true,
@@ -2251,7 +2251,7 @@
           "Morph"
         ]},
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "canSpringBallJumpMidAir"
         ]}
       ],
@@ -2271,7 +2271,7 @@
         "canManipulateMellas",
         "canBePatient",
         {"or": [
-          "canWalljump",
+          "canWallJump",
           "HiJump",
           "canSpringBallJumpMidAir",
           {"and": [
@@ -2307,10 +2307,10 @@
         "canManipulateMellas",
         "h_preciseIceClip",
         {"or": [
-          "canConsecutiveWalljump",
+          "canConsecutiveWallJump",
           {"and": [
             "HiJump",
-            "canWalljump"
+            "canWallJump"
           ]}
         ]}
       ],

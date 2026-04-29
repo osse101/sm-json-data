@@ -810,7 +810,7 @@
         {"obstaclesCleared": ["B"]},
         {"or": [
           "HiJump",
-          "canWalljump",
+          "canWallJump",
           "canSpringBallJumpMidAir",
           "SpaceJump",
           "canIBJ",
@@ -871,7 +871,7 @@
             {"thornHits": 1}
           ]},
           {"and": [
-            "canPreciseWalljump",
+            "canPreciseWallJump",
             "canTwoTileSqueeze"
           ]}
         ]}
