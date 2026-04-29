@@ -762,16 +762,27 @@
         "canWallJump",
         "Morph",
         "canUseIFrames",
+        "canNeutralDamageBoost",
         {"or": [
           "Grapple",
           {"and": [
             "canSuitlessMaridia",
             "canPlayInSand",
             "HiJump",
-            "canNeutralDamageBoost",
             "canTrickySpringBallJump",
             "canTrickyJump",
             {"spikeHits": 2}
+          ]},
+          {"and": [
+            "canSuitlessMaridia",
+            "canPlayInSand",
+            "canTrickyUseFrozenEnemies",
+            "canTrickyJump",
+            {"spikeHits": 2},
+            {"or": [
+              "canInsaneJump",
+              {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 1}}
+            ]}
           ]}
         ]},
         {"spikeHits": 1},
@@ -861,7 +872,7 @@
         "canTrickyJump",
         {"or": [
           "canInsaneJump",
-          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 2}}
+          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 3}}
         ]},
         "h_complexToCarryFlashSuit"
       ],
@@ -886,7 +897,11 @@
         "canTrickyJump",
         {"or": [
           "canInsaneJump",
-          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 2}}
+          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 3}}
+        ]},
+        {"or": [
+          "canBePatient",
+          "canWallJump"
         ]},
         "h_trickyToCarryFlashSuit"
       ],
@@ -2713,7 +2728,7 @@
         "canCameraManip",
         {"or": [
           "canInsaneJump",
-          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 2}}
+          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 3}}
         ]},
         "h_complexToCarryFlashSuit"
       ],
@@ -2739,7 +2754,11 @@
         "canCameraManip",
         {"or": [
           "canInsaneJump",
-          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 2}}
+          {"enemyDamage": {"enemy": "Mochtroid", "type": "contact", "hits": 3}}
+        ]},
+        {"or": [
+          "canBePatient",
+          "canWallJump"
         ]},
         "h_trickyToCarryFlashSuit"
       ],
