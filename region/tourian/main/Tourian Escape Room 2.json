@@ -229,7 +229,7 @@
       ],
       "detailNote": [
         "They may (50% chance) change direction after climbing a distance of about 5 tiles.",
-        "Samus may need to be facing the pirate or facing away in order to take damage in the transition."
+        "Can randomly fail depending on the height the pirate is frozen and the direction Samus is facing."
       ]
     },
     {
