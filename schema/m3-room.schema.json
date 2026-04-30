@@ -563,15 +563,15 @@
             "comeInWithStoredFallSpeed": {
               "type": "object",
               "title": "Come in With Stored Fall Speed",
-              "description": "Represents that Samus has stored a high vertical fall speed value that will clip through the floor with the next use of Moonfall.",
-              "required": ["fallSpeedInTiles"],
+              "description": "Represents that Samus has stored a vertical speed value that can jump if low, or underflow and fall quickly if high.",
+              "required": ["verticalSpeedInPixels"],
               "additionalProperties": false,
               "properties": {
-                "fallSpeedInTiles": {
-                  "type": "integer",
-                  "title": "Fall Speed in Tiles",
-                  "description": "The number of tiles Samus would clip through by Moonfalling on top of a solid floor.",
-                  "maximum": 2
+                "verticalSpeedInPixels": {
+                  "$ref": "m3-numeric-value.schema.json#/definitions/nonNegativeIntegerValue",
+                  "title": "Vertical Speed in Pixels",
+                  "description": "The vertical pixel speed Samus has stored.",
+                  "maximum": 65535
                 }
               }
             },
@@ -1165,15 +1165,15 @@
             "leaveWithStoredFallSpeed": {
               "type": "object",
               "title": "Leave With Stored Fall Speed",
-              "description": "Represents that Samus has stored a high vertical fall speed value that will clip through the floor with the next use of Moonfall.",
-              "required": ["fallSpeedInTiles"],
+              "description": "Represents that Samus has stored a vertical speed value that can jump if low, or underflow and fall quickly if high.",
+              "required": ["verticalSpeedInPixels"],
               "additionalProperties": false,
               "properties": {
-                "fallSpeedInTiles": {
-                  "type": "integer",
-                  "title": "Fall Speed in Tiles",
-                  "description": "The number of tiles Samus would clip through by Moonfalling on top of a solid floor.",
-                  "maximum": 2
+                "verticalSpeedInPixels": {
+                  "$ref": "m3-numeric-value.schema.json#/definitions/nonNegativeIntegerValue",
+                  "title": "Vertical Speed in Pixels",
+                  "description": "The vertical pixel speed Samus has stored.",
+                  "maximum": 65535
                 }
               }
             },

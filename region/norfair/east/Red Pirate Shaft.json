@@ -362,7 +362,7 @@
       "name": "Stored Moonfall Clip",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "requires": [

@@ -58,6 +58,30 @@
           "value": 8,
           "minimum": 0,
           "note": "Number of failed attempts expected before a successful elevator Crystal Flash attempt."
+        },
+        {
+          "name": "n_moondanceSpeedPixelsOneTile",
+          "value": 65510,
+          "minimum": 0,
+          "note": "The vertical speed to fall through one tile on the next moonfall."
+        },
+        {
+          "name": "n_moondanceSpeedPixelsTwoTiles",
+          "value": 65494,
+          "minimum": 0,
+          "note": "The vertical speed to fall through two tiles on the next moonfall."
+        },
+        {
+          "name": "n_jumpStorageSpeedPixels",
+          "value": 4,
+          "minimum": 0,
+          "note": "The highest vertical speed when springballing in air physics."
+        },
+        {
+          "name": "n_jumpStorageHiJumpSpeedPixels",
+          "value": 5,
+          "minimum": 0,
+          "note": "The highest vertical speed when springballing in air physics with HiJump."
         }
       ]
     },

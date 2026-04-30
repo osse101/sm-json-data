@@ -127,6 +127,7 @@
     "canFrozenEnemyGrappleHang",
     "canSuperSink",
     "canMorphTurnaround",
+    "canJumpStorage",
     "canCrouchJump",
     "canTurnaroundSpinJump",
     "canFlatleyJump",

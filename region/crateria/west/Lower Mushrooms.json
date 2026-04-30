@@ -191,13 +191,13 @@
       "name": "Transition with Stored Fall Speed",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "requires": [],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "unlocksDoors": [
@@ -213,13 +213,13 @@
       "name": "Transition with Stored Fall Speed (more speed)",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "requires": [],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "unlocksDoors": [
@@ -280,13 +280,13 @@
       "name": "Transition with Stored Fall Speed",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "requires": [],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "unlocksDoors": [
@@ -302,13 +302,13 @@
       "name": "Transition with Stored Fall Speed (more speed)",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "requires": [],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "unlocksDoors": [

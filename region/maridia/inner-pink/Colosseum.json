@@ -3016,7 +3016,7 @@
       "name": "Stored Moonfall Grapple Door Lock Skip",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "requires": [

@@ -212,7 +212,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": false,
@@ -638,7 +638,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": true,

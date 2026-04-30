@@ -1051,6 +1051,25 @@
             "The ability to use Morph to turn around without moving horizontally.",
             "This is typically used to back into a corner without Moonwalk."
           ]
+        },
+        {
+          "name": "canJumpStorage",
+          "techRequires": [],
+          "otherRequires": [
+            "Morph",
+            "SpringBall"
+          ],
+          "note": [
+            "The ability to 'interrupt' a ball-form jump, by unmorphing in a 2 tile-high space, to store the jump for later.",
+            "Morphing will remove Jump Storage, so Samus must be positioned to escape with a crouched turnaround.",
+            "This is easily done by moonwalking into the wall, crouching, and turning under the space.",
+            "Walking off a ledge will then resume the jump using the stored vertical speed values.",
+            "This is most useful for carrying a air physics jump into a water room to gain extra height.",
+            "The stored jump will activate from: damage knockback, jumping, falling, crouching, morphing, or standing with an up press.",
+            "and it will be lost by using Grapple.",
+            "Angle turnaround canceling will reduce the strength of the jump."
+          ],
+          "devNote": "It is possible to store greater speed with a Speedbooster assisted springball jump but it has limited uses."
         }
       ]
     },

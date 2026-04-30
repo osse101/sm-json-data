@@ -383,7 +383,7 @@ A `leaveSpaceJumping` condition comes with implicit requirements:
 A `leaveWithStoredFallSpeed` exit condition represents that Samus can leave through this door with stored fall speed.
 
 The `leaveWithStoredFallSpeed` object has a single property:
-- _fallSpeedInTiles_: The number of tiles Samus would clip through by Moonfalling on top of a solid floor.
+- _verticalSpeedInPixels_: Represents that Samus has stored a vertical speed value that can jump if low, or underflow and fall quickly if high.
 
 A `leaveWithStoredFallSpeed` entrance condition must match with a `comeInWithStoredFallSpeed` condition on the other side of the door.  A strat with a `leaveWithStoredFallSpeed` condition must include a method of storing fall speed within its requirements, such as a Moondance.  Entering a room with a `comeInWithStoredFallSpeed` condition would also be a possible way to exit with a `leaveWithStoredFallSpeed` condition so long as the stored speed is not lost.  For this to happen, both doors must be connected by one `Runway`, and Samus must not Crouch or become Knocked back.
 
@@ -397,7 +397,7 @@ A `leaveWithStoredFallSpeed` entrance condition must match with a `comeInWithSto
   ],
   "exitCondition": {
     "leaveWithStoredFallSpeed": {
-      "fallSpeedInTiles": 1
+      "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
     }
   }
 }
@@ -1350,9 +1350,9 @@ There are additional requirements depending on the exit condition:
 A `comeInWithStoredFallSpeed` entrance condition represents that Samus can enter through this door with stored fall speed. 
 
 The `comeInWithStoredFallSpeed` object has a single property:
-- _fallSpeedInTiles_: The number of tiles Samus would clip through by Moonfalling on top of a solid floor.
+- _verticalSpeedInPixels_: Represents that Samus has stored a vertical speed value that can jump if low, or underflow and fall quickly if high.
 
-A `comeInWithStoredFallSpeed` entrance condition must match with a `leaveWithStoredFallSpeed` condition on the other side of the door.  The `comeInWithStoredFallSpeed` can lead to another `leaveWithStoredFallSpeed` so long as the stored speed is not lost.  For this to happen, both doors must be connected by one `Runway`, and Samus must not Crouch or become Knocked back.  A strat with a `comeInWithStoredFallSpeed` condition should only include requirements needed to position Samus for the clip.
+A `comeInWithStoredFallSpeed` entrance condition must match with a `leaveWithStoredFallSpeed` condition on the other side of the door.  The `comeInWithStoredFallSpeed` can lead to another `leaveWithStoredFallSpeed` so long as the stored speed is not lost.  For this to happen, both doors must be connected by one `Runway`, and Samus must not Crouch or become Knocked back.  A strat with a `comeInWithStoredFallSpeed` condition should only include requirements needed to position Samus for the strat.
 
 *Note*: There is an implicit `canMoonfall` requirement on strats which have the `comeInWithStoredFallSpeed` condition as a means of using the stored fall speed.
 
@@ -1362,7 +1362,7 @@ A `comeInWithStoredFallSpeed` entrance condition must match with a `leaveWithSto
   "name": "Stored Fall Speed Clip",
   "entranceCondtion": {
     "comeInWithStoredFallSpeed": {
-      "fallSpeedInTiles": 1
+      "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
     }
   },
   "requires": []

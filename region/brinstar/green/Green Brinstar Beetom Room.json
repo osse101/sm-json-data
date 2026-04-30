@@ -228,7 +228,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": true,
@@ -264,7 +264,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": true,
@@ -289,7 +289,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "flashSuitChecked": true,
@@ -1012,7 +1012,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": true,
@@ -1048,7 +1048,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": true,
@@ -1073,7 +1073,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "flashSuitChecked": true,

@@ -431,7 +431,7 @@
       ],
       "exitCondition": {
         "leaveWithStoredFallSpeed": {
-          "fallSpeedInTiles": 1
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsOneTile"
         }
       },
       "flashSuitChecked": true,
@@ -565,7 +565,7 @@
       "name": "Stored Moonfall Clip",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "requires": [

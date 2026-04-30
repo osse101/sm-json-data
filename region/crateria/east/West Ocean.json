@@ -875,7 +875,7 @@
       "name": "Stored Moonfall Clip Through the Bridge",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "requires": [
@@ -910,7 +910,7 @@
       "name": "Stored Moonfall Clip Into the Bridge",
       "entranceCondition": {
         "comeInWithStoredFallSpeed": {
-          "fallSpeedInTiles": 2
+          "verticalSpeedInPixels": "n_moondanceSpeedPixelsTwoTiles"
         }
       },
       "requires": [
