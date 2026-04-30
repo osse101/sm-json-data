@@ -1565,6 +1565,24 @@
       "blueSuitChecked": true
     },
     {
+      "link": [2, 1],
+      "name": "Jump Storage",
+      "entranceCondition": {
+        "comeInWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "requires": [
+        {"disableEquipment": "Gravity"},
+        "canMidAirMorph",
+        "canMomentumConservingTurnaround",
+        {"tech": "canCrossRoomJumpIntoWater"}
+      ],
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": "Enter with a small amount of runspeed."
+    },
+    {
       "id": 35,
       "link": [2, 1],
       "name": "Double Spring Ball Jump",
@@ -3717,6 +3735,24 @@
         "A spring ball bounce could be done here instead of a side platform jump,",
         "but this strat is still included in cases where it's a reasonable alternative."
       ]
+    },
+    {
+      "link": [3, 4],
+      "name": "Jump Storage",
+      "entranceCondition": {
+        "comeInWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "requires": [
+        {"disableEquipment": "Gravity"},
+        "canMidAirMorph",
+        "canMomentumConservingTurnaround",
+        {"tech": "canCrossRoomJumpIntoWater"}
+      ],
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": "Enter with a small amount of runspeed."
     },
     {
       "id": 150,

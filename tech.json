@@ -1069,7 +1069,20 @@
             "and it will be lost by using Grapple.",
             "Angle turnaround canceling will reduce the strength of the jump."
           ],
-          "devNote": "It is possible to store greater speed with a Speedbooster assisted springball jump but it has limited uses."
+          "devNote": "It is possible to store greater speed with a Speedbooster assisted springball jump but it has limited uses.",
+          "extensionTechs": [
+            {
+              "name": "canTrickyJumpStorage",
+              "techRequires": ["canJumpStorage"],
+              "otherRequires": [],
+              "note": [
+                "The ability to perform Jump Storage under more difficult conditions.",
+                "This can be using a frozen enemy, or using blocks that are actively breaking from a Power Bomb",
+                "This includes using SpeedBooster to increase the stored jump height.",
+                "But in that case the blocks must be broken to escape afterwards."
+              ]
+            }
+          ]
         }
       ]
     },

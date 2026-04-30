@@ -191,6 +191,96 @@
       ]
     },
     {
+      "link": [1, 1],
+      "name": "Blockade Leave with Stored Jump",
+      "requires": [
+        "canJumpStorage",
+        {"obstaclesNotCleared": ["A"]},
+        {"noBlueSuit": {}},
+        {"or": [
+          "h_useMorphBombs",
+          "ScrewAttack",
+          "h_shinechargeMaxRunway",
+          {"and": [
+            "canTrickyJumpStorage",
+            "h_usePowerBomb"
+          ]}
+        ]}
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": [
+        "Break exactly the bottom left two blocks and perform the jump storage.",
+        "It is possible to slide into these blocks with Speedbooser, or to carefully break them with Screw Attack."
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Blockade Leave with More Stored Jump",
+      "requires": [
+        "canJumpStorage",
+        {"obstaclesNotCleared": ["A"]},
+        {"noBlueSuit": {}},
+        "HiJump",
+        {"or": [
+          "h_useMorphBombs",
+          "ScrewAttack",
+          "h_shinechargeMaxRunway",
+          {"and": [
+            "canTrickyJumpStorage",
+            "h_usePowerBomb"
+          ]}
+        ]}
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageHiJumpSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": [
+        "Break exactly the bottom left two blocks and perform the jump storage.",
+        "It is possible to slide into these blocks with Speedbooser, or to carefully break them with Screw Attack."
+      ]
+    },
+    {
+      "link": [1, 1],
+      "name": "Zeela Leave with Stored Jump",
+      "requires": [
+        "canTrickyJumpStorage",
+        "canTrickyUseFrozenEnemies"
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true
+    },
+    {
+      "link": [1, 1],
+      "name": "Zeela Leave with More Stored Jump",
+      "requires": [
+        "canTrickyJumpStorage",
+        "HiJump",
+        "canTrickyUseFrozenEnemies"
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageHiJumpSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true
+    },
+    {
       "id": 4,
       "link": [1, 1],
       "name": "Zeela and Reo Farm",
@@ -1498,6 +1588,49 @@
       ]
     },
     {
+      "link": [3, 2],
+      "name": "Lure Zeela, Leave with Stored Jump",
+      "requires": [
+        {"or": [
+          "h_shinechargeMaxRunway",
+          {"haveBlueSuit": {}}
+        ]},
+        "canTrickyJumpStorage",
+        "canTrickyUseFrozenEnemies",
+        "canBeVeryPatient"
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "unlocksDoors": [{"types": ["ammo"],"requires": []}],
+      "flashSuitChecked": true,
+      "blueSuitChecked": true
+    },
+    {
+      "link": [3, 2],
+      "name": "Lure Zeela, Leave with More Stored Jump",
+      "requires": [
+        {"or": [
+          "h_shinechargeMaxRunway",
+          {"haveBlueSuit": {}}
+        ]},
+        "canTrickyJumpStorage",
+        "HiJump",
+        "canTrickyUseFrozenEnemies",
+        "canBeVeryPatient"
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageHiJumpSpeedPixels"
+        }
+      },
+      "unlocksDoors": [{"types": ["ammo"],"requires": []}],
+      "flashSuitChecked": true,
+      "blueSuitChecked": true
+    },
+    {
       "id": 66,
       "link": [3, 2],
       "name": "Gain Flash Suit (Slopespark) - Leave With Shinespark",
@@ -1552,6 +1685,98 @@
         "Freeze one of the Metarees at a height where Samus can become stuck and then use it to Moondance.",
         "Stop after exactly 175 Moonfalls, before Samus clips into the ground."
       ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Blockade Leave with Stored Jump",
+      "requires": [
+        "canJumpStorage",
+        {"obstaclesNotCleared": ["A"]},
+        {"noBlueSuit": {}},
+        {"or": [
+          "h_useMorphBombs",
+          "ScrewAttack",
+          "h_shinechargeMaxRunway",
+          {"and": [
+            "canTrickyJumpStorage",
+            "h_usePowerBomb"
+          ]}
+        ]}
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": [
+        "Break exactly the bottom left two blocks and perform the jump storage.",
+        "It is possible to slide into these blocks with Speedbooser, or to carefully break them with Screw Attack."
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Blockade Leave with More Stored Jump",
+      "requires": [
+        "canJumpStorage",
+        {"obstaclesNotCleared": ["A"]},
+        {"noBlueSuit": {}},
+        "HiJump",
+        {"or": [
+          "h_useMorphBombs",
+          "ScrewAttack",
+          "h_shinechargeMaxRunway",
+          {"and": [
+            "canTrickyJumpStorage",
+            "h_usePowerBomb"
+          ]}
+        ]}
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageHiJumpSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true,
+      "note": [
+        "Break exactly the bottom left two blocks and perform the jump storage.",
+        "It is possible to slide into these blocks with Speedbooser, or to carefully break them with Screw Attack."
+      ]
+    },
+    {
+      "link": [3, 3],
+      "name": "Zeela Leave with Stored Jump",
+      "requires": [
+        {"obstaclesCleared": ["A"]},
+        "canTrickyJumpStorage",
+        "canTrickyUseFrozenEnemies"
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true
+    },
+    {
+      "link": [3, 3],
+      "name": "Zeela Leave with More Stored Jump",
+      "requires": [
+        {"obstaclesCleared": ["A"]},
+        "canTrickyJumpStorage",
+        "HiJump",
+        "canTrickyUseFrozenEnemies"
+      ],
+      "exitCondition": {
+        "leaveWithStoredFallSpeed": {
+          "verticalSpeedInPixels": "n_jumpStorageHiJumpSpeedPixels"
+        }
+      },
+      "flashSuitChecked": true,
+      "blueSuitChecked": true
     },
     {
       "id": 58,

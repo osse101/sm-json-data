@@ -128,6 +128,7 @@
     "canSuperSink",
     "canMorphTurnaround",
     "canJumpStorage",
+    "canTrickyJumpStorage",
     "canCrouchJump",
     "canTurnaroundSpinJump",
     "canFlatleyJump",
