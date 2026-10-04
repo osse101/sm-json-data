@@ -722,6 +722,7 @@
       ]
     },
     {
+      "id": 55,
       "link": [2, 2],
       "name": "Bottom Pirate Kill - Shinespark",
       "requires": [
@@ -1147,6 +1148,6 @@
       ]
     }
   ],
-  "nextStratId": 55,
+  "nextStratId": 56,
   "nextNotableId": 2
 }
